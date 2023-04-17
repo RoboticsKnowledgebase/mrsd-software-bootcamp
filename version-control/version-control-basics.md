@@ -21,12 +21,22 @@ Repository model is the way in which the VCS stores the history of changes to th
 
 - **Distributed Model**: In this model, every developer has a complete copy of the codebase and its history on their local machine. This allows developers to work on the codebase without needing to be connected to the internet or a central server. This model is used by Git and Mercurial.
 
+### Concurrency Model
+
+Concurrency model is the way in which the VCS handles concurrent changes to the same file. There are two main concurrency models:
+
+- **Lock-Modify-Unlock**: In this model, a developer must acquire a lock on a file before they can make changes to it. This prevents other developers from making changes to the same file at the same time. This model is used by Subversion and Perforce.
+
+- **Copy-Modify-Merge**: In this model, a developer can make changes to a file without acquiring a lock. When they are done, they can commit their changes back to the repository. If another developer has made changes to the same file, the VCS will attempt to merge the changes together. If the changes cannot be merged automatically, the VCS will mark the file as having a conflict and the developer will have to manually resolve the conflict. This model is used by Git and Mercurial.
+
 ## References
 
 - [What is Version Control? | Atlassian][1]
 - [Version Control Software | BitBucket][2]
 - [Version Control | GitLab][3]
+- [Versioning Models | Version Control with Subversion][4]
 
 [1]: https://www.atlassian.com/git/tutorials/what-is-version-control
 [2]: https://bitbucket.org/product/version-control-software
 [3]: https://about.gitlab.com/topics/version-control/
+[4]: https://edoras.sdsu.edu/doc/svn-book-html-chunk/svn.basic.vsn-models.html
