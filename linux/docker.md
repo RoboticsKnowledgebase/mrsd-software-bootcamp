@@ -35,27 +35,20 @@ Kubernetes is an open-source container-orchestration system for automating appli
 To install Docker on Ubuntu, run:
 
 ```bash
-
 sudo apt update
-
 sudo apt install docker.io
-
 ```
 
 To check the status of the Docker service, run:
 
 ```bash
-
 sudo systemctl status docker
-
 ```
 
 To enable Docker to start on boot, run:
 
 ```bash
-
 sudo systemctl enable docker
-
 ```
 
 ## References
