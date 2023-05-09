@@ -4,11 +4,47 @@ Git is a distributed revision control and source code management system with an 
 
 Git is primarily a command-line tool but are graphical user interface applications that make it easier to work with, at the cost of hiding the more advanced features. Starting with a GUI client is a great way to mitigate git's steep learning curve.
 
-## Using Git
+## Git Terminology
+
+### Repository
+
+A repository is a directory that contains your project work which is managed by git. Each repository contains a collection of files and directories, as well as the history of changes made to those files and directories. Repositories can exist locally on your computer or as a remote copy on another computer. Repositories can also talk to each other over the internet and sync changes. A local git repository behaves exactly like a regular directory in your file system which you can add, remove and edit files in. The only difference is that git can keep track of all the changes that happen to the files in that directory. You will also notice that a git repository has a hidden directory called `.git` which contains all the information git needs to keep track of the changes to the files in that directory.
+
+### Commit
+
+A commit, or revision or change-set, is a set of modifications made to a file or a set of files. Every time you want to save the state of a project directory with git, you would do what is called the "commit" operation which creates a new commit object. Each commit object is named a unique hash value that allows git to keep record of what changes were made, when and by who. During commit creation, the user is asked to provide a brief summary of what changes went into that particular change-set.
+
+Example git commit message showing the commit hash, author, date and commit message:
+
+```text
+commit 175437538623b381727c4046862cd252bb44569b
+Author: John Doelan <johndoe@domain.net>
+Date:   Mon Apr 17 03:45:54 2023 -0400
+
+    Add a page for Linux fundamentals
+
+    Add a page for Linux basics, covering an introduction to Linux, shell,
+    file system and directory structure.
+```
+
+### Branch
+
+A branch is when a new line of development is created that diverges from the main line of development. This alternative line of development can continue without altering the main line. Going back to the example of save points, you can think of a branch as where you make a save point in your game and then decide to try out a risky move in the game. If the risky move doesn't pan out, then you can just go back to the save point. The key thing that makes branches incredibly powerful is that you can make save points on one branch, and then switch to a different branch and make save points there, too.
+
+### Fork
+
+A fork is a personal copy of another user's repository that lives on your account. Forks allow you to freely make changes to a project without affecting the original. Forks remain attached to the original, allowing you to submit a pull request to the original's author to update with your changes. You can also keep your fork up to date by pulling in updates from the original.
+
+### Pull Request
+
+Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository's collaborators. Like issues, pull requests each have their own discussion forum.
+
+## Learning Resources
 
 ### Basics
 
 - [GitHub Learning Lab](https://lab.github.com/) offers some excellent courses on mastering the basics of git on their platform. Their [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github) course is great place to get started.
+
 - [GitHub's Getting Started Guide](https://help.github.com/)
   Walks you through creating a repository on GitHub and basics of git.
 
