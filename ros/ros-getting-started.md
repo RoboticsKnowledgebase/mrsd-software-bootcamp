@@ -1,6 +1,6 @@
-# Getting Started with ROS
+# Getting Started with ROS for Robotics
 
-There are several things to consider while getting started with ROS for your project. This guide will help you get started with ROS by providing an overview of the ROS ecosystem and various design considerations.
+There are several things to consider while getting started with ROS for a robotics project. This guide will help you get started with ROS by providing an overview of the ROS ecosystem and various design considerations.
 
 ## ROS 1 vs ROS 2: Which Version Should I Use?
 

@@ -1,8 +1,12 @@
-# Remote Access with SSH
+# Remote Access using SSH
+
+## What is SSH?
+
+SSH (Secure Shell) is a network protocol that allows you to securely connect to a remote server over an unsecured network. It is used to execute commands on a remote server and to transfer files to and from a remote server.
 
 ## Setting Up a Firewall
 
-If you are exposing your server to the internet, it is important to set up a firewall to protect it from unauthorized access. Ubuntu ships with a firewall called `ufw` (Uncomplicated Firewall) that is easy to configure.
+If you are exposing your linux server to the internet, it is important to set up a firewall to protect it from unauthorized access. Ubuntu Linux ships with a firewall called `ufw` (Uncomplicated FireWall) that is easy to configure.
 
 To enable `ufw` firewall, run:
 

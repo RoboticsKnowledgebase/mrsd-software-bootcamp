@@ -14,34 +14,30 @@ The steps are as follows:
 1. Pull the ROS2 Humble Docker image from registry
 
     ```bash
-    docker image pull ros:humble
+    docker image pull osrf/ros:humble-desktop
     ```
 
 1. Run a Docker container from downloaded image
 
     ```bash
-    docker run -it --rm ros:melodic --name ros-humble-container
+    docker run -it --rm --name ros-humble-container osrf/ros:humble-desktop
     ```
 
-1. Connect a second terminal to the running container by name
+1. Run talker node:
 
     ```bash
-    docker exec -it ros-humble-container bash
+    ros2 run demo_nodes_cpp listener &
     ```
 
-1. Run turtlesim ROS node on terminal 1
+    > Note: the `&` at the end of the command is to run the node in the background
+
+1. Run listener node:
 
     ```bash
-    ros2 run turtlesim turtlesim_node
+    ros2 run demo_nodes_cpp talker
     ```
 
-1. Control the turtle on terminal 2
-
-    ```bash
-    ros2 run turtlesim turtle_teleop_key
-    ```
-
-You should be able to control the turtle on the GUI connected to terminal 1 by pressing the keys on terminal 2.
+You should now see the messages being exchanged between the two nodes.
 
 ## References
 

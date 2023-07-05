@@ -91,7 +91,7 @@ Here are some examples of directory paths in Linux:
 
 - `/var` - Contains variable data files.
 
-### Linux file system permissions
+### Linux File System Permissions
 
 Linux file system permissions are used to control who is able to read, write and execute a certain file. These permissions can be granted to the owner of the file, the group associated with the file, and all other users.
 

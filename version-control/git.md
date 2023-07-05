@@ -1,14 +1,20 @@
 # Git
 
+## What is Git?
+
 Git is a distributed revision control and source code management system with an emphasis on speed. Every Git working directory is a full-fledged repository with complete history and full version tracking capabilities, and is not dependent on network access or a central server. Git is free software distributed under the terms of the GNU GPLv2.
 
-Git is primarily a command-line tool but are graphical user interface applications that make it easier to work with, at the cost of hiding the more advanced features. Starting with a GUI client is a great way to mitigate git's steep learning curve.
+Git is primarily a command-line tool but there are simplified graphical user interface applications that make it easier to work with. Starting with a GUI client is a great way to mitigate git's steep learning curve.
+
+## Why do I need Git?
+
+As a roboticist, you will be working with a lot of code. You will be writing code, modifying code, and sharing code with other people. You will also be working on multiple projects at the same time. Git is a tool that helps you manage all of this code. It allows you to keep track of all of the changes that you make to your code, and share your code with other people. It also allows you to work on multiple projects at the same time, and it allows you to switch between projects easily.
 
 ## Git Terminology
 
 ### Repository
 
-A repository is a directory that contains your project work which is managed by git. Each repository contains a collection of files and directories, as well as the history of changes made to those files and directories. Repositories can exist locally on your computer or as a remote copy on another computer. Repositories can also talk to each other over the internet and sync changes. A local git repository behaves exactly like a regular directory in your file system which you can add, remove and edit files in. The only difference is that git can keep track of all the changes that happen to the files in that directory. You will also notice that a git repository has a hidden directory called `.git` which contains all the information git needs to keep track of the changes to the files in that directory.
+A repository is a directory that contains your project files which is managed by git. Each repository contains a collection of files and directories along with the history of changes made to those files and directories. Repositories can exist locally on your computer or as a remote copy on another computer. Repositories can also talk to each other over the internet and sync changes. A local git repository behaves exactly like a regular directory in your file system which you can add, remove and edit files in. The only difference is that git can keep track of all the changes that happen to the files in that directory. You will also notice that a git repository has a hidden directory called `.git` which contains all the information git needs to keep track of the changes to the files in that directory.
 
 ### Commit
 
@@ -107,7 +113,10 @@ One of the best reading resources around git and version control. Contains a ver
 - [Atlassian Git Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet): A handy set of commands to have around your desk for those quick command look ups.
 
 - [How to Undo Almost Anything with Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/): A blog post from GitHub that lists some scary scenarios in git and how to undo almost anything.
+
 - [Dangit, Git!?](https://dangitgit.com/): Quick references for getting out of bad situations in git. Very powerful set of fixes, but doesn't provide a good explanation of what happened / how the fix works - read before you blindly follow the instructions.
+
 - [Official Git Documentation](http://git-scm.com/documentation)
 Extremely thorough documentation of git. It can be quite dense if you're new to git, but this the most authoritative and updated documentation for git CLI usage. Best used to look up command-line usage, parameters and their rationale.
+
 - Man pages: The git command line interface ships with a very good set of man pages accessible by running `man git` on the terminal and is available wherever git is installed. If you're not familiar with man pages, you can read about it [here](https://itsfoss.com/linux-man-page-guide/).

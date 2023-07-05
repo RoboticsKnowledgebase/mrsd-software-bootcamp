@@ -14,14 +14,14 @@ GitHub offers a student developer pack that gives students free access to the be
 
 1. To begin the exercise, sign up for an account on [GitHub](https://github.com).
 
-1. Fork the repository at [mrsd-practice-git](https://github.com/nevalsar/mrsd-practice-git/) to your own account
+1. Fork the repository at [mrsd-practice-git](https://github.com/RoboticsKnowledgebase/mrsd-practice-git) to your own account
 
 1. Install `git` on your local machine
 
 1. Clone your forked repository to your local development machine by running:
 
     ```bash
-    git clone https://github.com/nevalsar/mrsd-practice-git.git
+    git clone https://github.com/RoboticsKnowledgebase/mrsd-practice-git
     ```
 
 1. Create a new local branch based off `main` branch

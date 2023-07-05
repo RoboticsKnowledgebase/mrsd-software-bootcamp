@@ -1,4 +1,4 @@
-# Markdown
+# Writing Documentation in Markdown
 
 Markdown is a lightweight markup language with plain text formatting syntax. Markdown is often used to format readme files, for formatting messages in online discussion forums, and to create rich text using a plain text editor. Markdown is a popular format for writing documentation alongside code along with other markup languages like reStructuredText, AsciiDoc, and Textile.
 

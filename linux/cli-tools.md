@@ -1,5 +1,9 @@
 # Command-line Tools
 
+## Why Learn the Command Line?
+
+The terminal or the command line is a powerful tool that can be used to perform a wide variety of tasks. It can be used to navigate through files and folders, run programs, and automate tasks. In robotics, the ability to use the command line effectively can come in very handy when logging into a robot remotely or debugging a robot that is not responding. Since complex robots often have full fledged operating systems running on them, the ability to work directly with the command line can be very useful.
+
 ## Key Concepts
 
 ### What is the command line?
@@ -16,6 +20,16 @@ Some of the most popular shells are:
 - Bourne Again Shell (Bash)
 - Zsh
 - Fish
+
+Shell scripts are files that contain shell commands. They are used to automate tasks and can be run from the command line. Typically, shell scripts have the `.sh` extension. The first line of a shell script is called the shebang and it tells the shell which program to use to run the script. For example, the shebang `#!/bin/bash` tells the shell to use the Bash shell to run the script.
+
+Example of a shell script
+
+```bash
+#!/bin/bash
+
+echo "Hello, world!"
+```
 
 ### What is a terminal emulator?
 

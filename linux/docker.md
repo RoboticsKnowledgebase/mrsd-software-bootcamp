@@ -39,6 +39,12 @@ sudo apt update
 sudo apt install docker.io
 ```
 
+Add user to the `docker` group:
+
+```bash
+sudo usermod -aG docker ${USER}
+```
+
 To check the status of the Docker service, run:
 
 ```bash
