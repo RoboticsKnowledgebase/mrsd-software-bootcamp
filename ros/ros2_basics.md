@@ -90,7 +90,7 @@ The second node will be named `relay.cpp` or `relay.py` and needs to meet these 
 - In the subscriber callback, take the speed and steering angle from the incoming message, multiply both by 3, and publish the new values via another `AckermannDriveStamped` message to a topic named `drive_relay`.
 
 ## 6: Creating a launch file and a parameter file
-**Deliverable 3**: create a launch file `lab1_launch.py` that launches both of the nodes we've created. If you want, you could also set the parameter for the `talker` node in this launch file.
+Create a launch file `lab1_launch.py` that launches both of the nodes we've created. If you want, you could also set the parameter for the `talker` node in this launch file.
 
 ## 7: ROS 2 commands
 
@@ -104,8 +104,5 @@ ros2 node info /talker
 ros2 node info /relay
 ```
 
-## 8: Deliverables
-In addition to the three deliverables described in this document, fill in the answers to the questions listed in **`SUBMISSION.md`**.
-
-We'll be using canvas throughout the semester to manage submissions for lab assignments. After you're finished, download the zip file containing the workspace or the 3 deliverables along with the **`SUBMISSION.md`** and submit the zip file to canvas.
+## 8: Summary
 
