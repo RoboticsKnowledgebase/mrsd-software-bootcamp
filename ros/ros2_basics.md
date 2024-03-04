@@ -64,5 +64,5 @@ You should see two topics listed:
 
 If you need multiple terminals and you're inside a Docker container, use `tmux`.
 
-Refer to these slides :- [Slides](Intro to ROS2.pdf)
+Refer to these slides :- [Slides](Intro-to-ROS2.pdf)
 
