@@ -6,21 +6,26 @@ This course is designed as a self-paced, self-guided course. Some sections are a
 
 ## Recommended Order of Topics
 
-1. [Linux 101](linux/linux-101.md)
-1. [Writing Documentation in Markdown](documentation/markdown.md)
-1. [Linux CLI Tools](linux/cli-tools.md)
-1. [Remote Access using SSH](linux/remote-access.md)
-1. [Docker](linux/docker.md)
-1. [ROS 101](ros/ros-101.md)
-1. [Getting Started with ROS for Robotics](ros/ros-getting-started.md)
-1. [Version Control Basics](version-control/version-control-basics.md)
-1. [Git](version-control/git.md)
-1. [Exercise: GitHub](exercises/github.md)
-1. [Job Control](exercises/job-control.md)
-1. [Exercise: ROS Docker](exercises/docker-ros-chatter.md)
-1. [ROS Action Server](ros/ros-action-server.md)
-1. [Reading Sensor Data](reading-sensor-data.md)
-
+1. Linux basics
+    - [Introduction](linux/linux-101.md)
+    - [Linux CLI Tools](linux/cli-tools.md)
+    - [Docker](linux/docker.md)
+    - [Remote Access using SSH](linux/remote-access.md)
+    - [Writing Documentation in Markdown](documentation/markdown.md)
+2. Version control basics
+    - [Introduction](version-control/version-control-basics.md)
+    - [Git](version-control/git.md)
+    - [Exercise: GitHub](exercises/github.md)
+    - [Job Control](exercises/job-control.md)
+3.  ROS1 basics
+    - [Introduction](ros/ros-101.md)
+    - [Getting Started with ROS for Robotics](ros/ros-getting-started.md)
+    - [Exercise: ROS Docker](exercises/docker-ros-chatter.md)
+    - [ROS Action Server](ros/ros-action-server.md)
+    - [Reading Sensor Data](reading-sensor-data.md)
+4. ROS2 basics
+    - [Introduction]
+    - 
 ## Contributing
 
 If you find a typo or error in the course material, please submit a pull request to the [GitHub repository](https://github.com/roboticsknowledgebase/mrsd-software-bootcamp). If you have a suggestion for a new topic, please open an issue on the repository.
