@@ -17,15 +17,16 @@ This course is designed as a self-paced, self-guided course. Some sections are a
     - [Git](version-control/git.md)
     - [Exercise: GitHub](exercises/github.md)
     - [Job Control](exercises/job-control.md)
-3.  ROS1 basics
+3.  ROS basics
     - [Introduction](ros/ros-101.md)
     - [Getting Started with ROS for Robotics](ros/ros-getting-started.md)
-    - [Exercise: ROS Docker](exercises/docker-ros-chatter.md)
     - [ROS Action Server](ros/ros-action-server.md)
     - [Reading Sensor Data](reading-sensor-data.md)
-4. ROS2 basics
-    - [Introduction]
-    - 
+    - [ROS2 basics](ros/ros2_basics.md)
+    - [Exercise: ROS Docker](exercises/docker-ros-chatter.md)
+    - [Exercise: Test your understanding](exercises/ros2_asgn.md)
+4. [Exercise: Full stack development with F1Tenth](f1tenth.md)
+
 ## Contributing
 
 If you find a typo or error in the course material, please submit a pull request to the [GitHub repository](https://github.com/roboticsknowledgebase/mrsd-software-bootcamp). If you have a suggestion for a new topic, please open an issue on the repository.
