@@ -25,7 +25,7 @@ This course is designed as a self-paced, self-guided course. Some sections are a
     - [ROS2 basics](ros/ros2_basics.md)
     - [Exercise: ROS Docker](exercises/docker-ros-chatter.md)
     - [Exercise: Test your understanding](exercises/ros2_asgn.md)
-4. [Exercise: Full stack development with F1Tenth](f1tenth.md)
+4. [Exercise: Full stack development with F1Tenth](F1Tenth/README.md)
 
 ## Contributing
 
