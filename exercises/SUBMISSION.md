@@ -1,4 +1,4 @@
-# Lab 1: Intro to ROS 2
+# Intro to ROS 2
 
 ## Written Questions
 
