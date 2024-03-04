@@ -12,11 +12,11 @@ This course is designed as a self-paced, self-guided course. Some sections are a
     - [Docker](linux/docker.md)
     - [Remote Access using SSH](linux/remote-access.md)
     - [Writing Documentation in Markdown](documentation/markdown.md)
+    - [Job Control](exercises/job-control.md)
 2. Version control basics
     - [Introduction](version-control/version-control-basics.md)
     - [Git](version-control/git.md)
     - [Exercise: GitHub](exercises/github.md)
-    - [Job Control](exercises/job-control.md)
 3.  ROS basics
     - [Introduction](ros/ros-101.md)
     - [Getting Started with ROS for Robotics](ros/ros-getting-started.md)
