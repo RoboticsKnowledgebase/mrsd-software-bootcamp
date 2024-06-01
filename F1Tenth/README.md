@@ -42,3 +42,7 @@ We have provided a skeleton for the pure pursuit node under pure_pursuit directo
 ## VIII. Putting everything together
 
 Once you have implemented everything, run the f1tenth sim, RRT local planner (optional for obstacle avoidance) and your pure pursuit controller. Pure pursuit controller node should communicate with sim to get the localized position, RRT local planner to get local path (or use the waypoint path directly if not implemented) and should publish the commands to /drive topic to drive the car around the map on the marked trajectory while avoiding obstacles 
+
+# IX. Solution
+
+As this is a self-asessment tutorial, the solution for waypoint logging, pure pursuit controller and rrt planner are given under Solution folder. The videos of the runs are in Solution/videos.md for you to check how the run should look like on the simulator. To re-iterate, the purpose of this tutorial is to familiarize you with the basics of ROS2 and how nodes communicate with each other on ROS2, implementation of full navigation stack with basic algorithms like Pure pursuit, RRT

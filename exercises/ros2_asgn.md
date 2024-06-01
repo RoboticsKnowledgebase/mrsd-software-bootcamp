@@ -50,5 +50,5 @@ ros2 node info /relay
 ```
 
 ## 5: Test your concepts
-Answer the questions listed in [SUBMISSION.md](SUBMISSION.md).
+Answer the questions listed in [SUBMISSION.md](SUBMISSION.md). The solution is given in [SUBMISSION-ans.md](SUBMISSION-ans.md), please self-assess yourself to verify if your understanding is clear.
 
