@@ -218,7 +218,7 @@ After implementing the strategy by reading the full game state info, your next t
 
 ### Self assessment
 
-Your AI should be able to predict and avoid projectiles in the “Medium” Scenario and survive for at least 1 minute. (Keep in mind this is randomized so the expectation is that your AI will survive longer than 1 minute and that it’s not just luck). Your AI is not required to survive in difficulties Hard and above; these scenarios are available for you to test and try out. We will also host a leaderboard on Gradescope. You'll receive bonus points depending on your rank on the leaderboard (linear scaling from first to last!).
+Your AI should be able to predict and avoid projectiles in the “Medium” Scenario and survive for at least 1 minute. (Keep in mind this is randomized so the expectation is that your AI will survive longer than 1 minute and that it’s not just luck). Your AI is not required to survive in difficulties Hard and above; these scenarios are available for you to test and try out. 
 
 
 The scenario can be adjusted within the startup.cpp file by changing which “setup” function is used in the main function or by simply passing an additional <difficulty> argument when running './missiledefense <difficulty level>'.
