@@ -222,3 +222,10 @@ Your AI should be able to predict and avoid projectiles in the “Medium” Scen
 
 
 The scenario can be adjusted within the startup.cpp file by changing which “setup” function is used in the main function or by simply passing an additional <difficulty> argument when running './missiledefense <difficulty level>'.
+
+Once you are done testing, you can run autograder by running 'autograder/run_autograder.sh' as:-
+
+```
+cd autograder/
+bash run_autograder.sh
+```
