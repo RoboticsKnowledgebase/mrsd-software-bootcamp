@@ -5,6 +5,10 @@
 #include "GLMesh.h"
 #include <GLFW/glfw3.h>
 #include <vector>
+#include "opencv2/opencv.hpp"
+#include <list>
+#include <vector>
+
 
 namespace mrsd{
 	struct Player;
@@ -16,7 +20,7 @@ namespace gl{
 		public:
 			void init(const Game& g);
 			void setupDraw();
-			void drawGame(const Game& g);
+			void drawGame(cv::Mat& img, const Game& g);
 			void update(const Game& g, float t);
 			void finishDraw();
 			bool shouldClose(Game& g);

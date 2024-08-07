@@ -13,6 +13,8 @@
 #include <game/Projectile.h>
 #include <game/Explosion.h>
 #include <sensor_msgs/Image.h>
+#include <opencv2/opencv.hpp>
+#include <cv_bridge/cv_bridge.h>
 
 // #include "game/Enemy.h"
 using namespace mrsd;
@@ -27,6 +29,7 @@ void setupScenarioImpossible(Game&);
 class GameNode {
 	public:
 		float curr_dir = 0.0f;
+		
 		ros::NodeHandle nh_;
 		GameNode() : nh_(), joy_subscriber_(nh_.subscribe("joy", 10, &GameNode::joyCallback, this)) {
 			// Initialize any variables or setup you need here
@@ -42,30 +45,46 @@ class GameNode {
 		ros::Subscriber joy_subscriber_;
 };
 
-void publishImage(ros::Publisher& pub, int width, int height) {
-    sensor_msgs::Image image_msg;
-    image_msg.width = width;
-    image_msg.height = height;
-    image_msg.encoding = "rgb8"; // Adjust encoding as needed
-    image_msg.step = 3 * width;
-    image_msg.data.resize(3 * width * height);
+void publishImage(ros::Publisher& pub, cv::Mat& img) {
+    // sensor_msgs::Image image_msg;
+    // image_msg.width = width;
+    // image_msg.height = height;
+    // image_msg.encoding = "rgb8"; // Adjust encoding as needed
+    // image_msg.step = 3 * width;
+    // image_msg.data.resize(3 * width * height);
 
-    // Read pixel data from framebuffer
-    glReadBuffer(GL_FRONT);
-    glReadPixels(0, 0, width, height, GL_RGB, GL_UNSIGNED_BYTE, image_msg.data.data());
-	// Flip image vertically
-    std::vector<uint8_t> flipped_data(3 * width * height);
-    for (int y = 0; y < height; ++y) {
-        int flipped_y = height - y - 1;
-        std::memcpy(&flipped_data[flipped_y * 3 * width], &image_msg.data[y * 3 * width], 3 * width);
-    }
+    // // Read pixel data from framebuffer
+    // glReadBuffer(GL_FRONT);
+    // glReadPixels(0, 0, width, height, GL_RGB, GL_UNSIGNED_BYTE, image_msg.data.data());
+	// // Flip image vertically
+    // std::vector<uint8_t> flipped_data(3 * width * height);
+    // for (int y = 0; y < height; ++y) {
+    //     int flipped_y = height - y - 1;
+    //     std::memcpy(&flipped_data[flipped_y * 3 * width], &image_msg.data[y * 3 * width], 3 * width);
+    // }
     
-    // Copy flipped data back to the image message
-    std::memcpy(image_msg.data.data(), flipped_data.data(), 3 * width * height);
+    // // Copy flipped data back to the image message
+    // std::memcpy(image_msg.data.data(), flipped_data.data(), 3 * width * height);
 
+    // // Publish image message
+    // pub.publish(image_msg);
     // Publish image message
-    pub.publish(image_msg);
-    // Publish image message
+    // pub.publish(image_msg);
+	// Create a cv_bridge image
+    cv_bridge::CvImage cv_image;
+    cv_image.header.stamp = ros::Time::now();
+    cv_image.encoding = sensor_msgs::image_encodings::BGR8; // Adjust encoding if needed
+
+    // Copy the OpenCV image to the cv_bridge image
+	cv::Mat flipped_img;
+	cv::flip(img, flipped_img, 0);
+    cv_image.image = flipped_img;
+
+    // Convert the cv_bridge image to a ROS image message
+    sensor_msgs::Image image_msg;
+    cv_image.toImageMsg(image_msg);
+
+    // Publish the ROS image message
     pub.publish(image_msg);
 }
 
@@ -158,9 +177,10 @@ int main(int argc, char **argv)
 	{
 		g.tick();
 		glfe.setupDraw();
-		glfe.drawGame(g);
+		cv::Mat img = cv::Mat::zeros(200, 200, CV_8UC3); // Example image
+		glfe.drawGame(img, g);
 		glfe.finishDraw();
-		publishImage(pub_img, 640, 480);
+		publishImage(pub_img, img);
 		glfe.update(g, g.getTimeStep());
 		glfe.input(g);
 		start += wait;

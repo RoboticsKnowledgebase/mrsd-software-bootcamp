@@ -11,8 +11,11 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
   message_generation
+  cv_bridge
+  image_transport
 )
 
+find_package(OpenCV REQUIRED)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
@@ -195,7 +198,7 @@ generate_messages(
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}
-  CATKIN_DEPENDS roscpp sensor_msgs message_runtime
+  CATKIN_DEPENDS roscpp sensor_msgs message_runtime cv_bridge image_transport
   # DEPENDS system_lib
 )
 
@@ -236,7 +239,7 @@ add_executable(glfw_test
 find_package(OpenGL)
 
 target_link_libraries(missiledefense
-	glfw ${CMAKE_DL_LIBS} ${catkin_LIBRARIES}
+	glfw ${CMAKE_DL_LIBS} ${catkin_LIBRARIES} ${OpenCV_LIBS}
 	)
 target_link_libraries(glfw_test
 	glfw ${CMAKE_DL_LIBS}
@@ -258,4 +261,5 @@ target_link_libraries(glfw_test
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
 )

@@ -146,7 +146,7 @@ roscore
 
 ```
 source devel/setup.bash
-rosrun game missildedefense
+rosrun game missiledefense
 ```
 
 This will open a new window with the game running. Controls: Press ‘C’ to spawn an AI controller player. Press ‘Space’ to spawn a user-controlled player. Use the left and right arrow keys to move your player. Pressing 'C' will spawn the agent that will listen to /joy topic and move according to it
