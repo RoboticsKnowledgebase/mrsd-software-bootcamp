@@ -216,25 +216,16 @@ After all this, you are requored to command '/joy' to move the player either lef
 
 After implementing the strategy by reading the full game state info, your next task is to accomplish the same task but by just reading the game image and not using the '/game_state' topic to read the complete game state. This would be the exact same setting as a human would observe from the game and react to it. For this you will need to use OpenGL or OpenCV library to read the image from '/game_image' topic, extract the enemy, projectile, player and explosion positions and control player accordingly instead of directly using them from '/game_state'. Create a separate node named 'controller_image' for this task 
 
-### Grading (To be modified):
+### Self assessment
 
-Your AI should be able to predict and avoid projectiles in the “Medium” Scenario and survive for at least 1 minute. (Keep in mind this is randomized so the expectation is that your AI will survive longer than 1 minute and that it’s not just luck). Your AI is not required to survive in difficulties Hard and above; these scenarios are available for you to test and try out. We will also host a leaderboard on Gradescope. You'll receive bonus points depending on your rank on the leaderboard (linear scaling from first to last!).
-
-
-The scenario can be adjusted within the startup.cpp file by changing which “setup” function is used in the main function. We will only accept changes to `Controller.cpp` and `Controller.h`. You must also write a README answering the following questions:
-
-1. Write an overview of how your AI works, including how it detects where projectiles will
-fall and how it chooses where to go.
-2. What challenges did you face when writing an AI?
-3.  How well does your AI work on a Hard scenario? If it doesn’t work, why? If it does, try harder scenarios and see when it does fail and explain why?
-4. What did you think of the assignment and did it meet its goals? Why or why not?
-
-### Submission Instructions
-
-- A skeleton for your PDF is provided in `ANSWERS.md`. Please fill in your answers there. 
-- Once done, convert the markdown document into pdf. This is easy if you are on VSCode -  Install the Markdown Enhanced extension. Preview the markdown, right click -> open in browser -> print to PDF.
-- Name the file as `TeamX_AndrewID_TaskN_Part1.pdf` where N is the task number in Canvas. 
-
-- Submit the PDF,`Controller.h`, `Controller.cpp`, and the README to Gradescope. Do not include any large binary files and the build folder in your archive.
+Your AI should be able to predict and avoid projectiles in the “Medium” Scenario and survive for at least 1 minute. (Keep in mind this is randomized so the expectation is that your AI will survive longer than 1 minute and that it’s not just luck). Your AI is not required to survive in difficulties Hard and above; these scenarios are available for you to test and try out. 
 
 
+The scenario can be adjusted within the startup.cpp file by changing which “setup” function is used in the main function or by simply passing an additional <difficulty> argument when running './missiledefense <difficulty level>'.
+
+Once you are done testing, you can run autograder by running 'autograder/run_autograder.sh' as:-
+
+```
+cd autograder/
+bash run_autograder.sh
+```

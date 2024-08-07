@@ -30,7 +30,13 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation. It aims to provide a "platform for automating deployment, scaling, and operations of application containers across clusters of hosts". It works with a range of container tools, including Docker.
 
-### How to install Docker on Ubuntu?
+### How to install Docker?
+
+#### With Docker-ce
+
+This is the standard way of installing docker as recommended on the official docker documentation [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/). This is the only option if you are on windows or macOS. For ubuntu, there is also an option to install docker.io package using Debian easily.
+
+#### With Docker.io package on ubuntu
 
 To install Docker on Ubuntu, run:
 
@@ -56,6 +62,10 @@ To enable Docker to start on boot, run:
 ```bash
 sudo systemctl enable docker
 ```
+
+## Some basic exercies
+
+PLease refer to this tutorial slides here to get an idea of some commonly used commands on docker: [Slides](docker_tutorial.pdf)
 
 ## References
 

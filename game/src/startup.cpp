@@ -167,7 +167,30 @@ int main(int argc, char **argv)
 	glfe.enemyScale = 3.f;
 
 	//Setup Scenario
-	setupScenarioEasy(g);
+	if (argc < 2) {
+		setupScenarioEasy(g);
+	}
+	else {
+		if (std::strcmp(argv[2], "easy") == 0) {
+			setupScenarioEasy(g);
+		}
+		else if (std::strcmp(argv[2], "medium") == 0) {
+			setupScenarioMedium(g);
+		}
+		else if (std::strcmp(argv[2], "hard") == 0) {
+			setupScenarioHard(g);
+		}
+		else if (std::strcmp(argv[2], "veryhard") == 0) {
+			setupScenarioVeryHard(g);
+		}
+		else if (std::strcmp(argv[2], "impossible") == 0) {
+			setupScenarioImpossible(g);
+		}
+		else {
+			std::cout << "Invalid scenario" << std::endl;
+			return 1;
+		}	
+	}
 	std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
 	std::chrono::milliseconds wait(1000/60);
 	ros::Publisher game_state_pub = node.nh_.advertise<game::GameState>("game_state", 10);
