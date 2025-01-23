@@ -2,7 +2,7 @@
 
 ## How to Use This Course
 
-This course is designed as a self-paced, self-guided course. Some sections are accompanied with a set of exercises that you can complete to test your knowledge. Each topic aims to explain the foundational concepts and practical usage of a particular tool or platform, and provide you with the resources you need to learn more. While you can find below a recommended order of topics, you are free to explore the topics in any order you wish, following external and internal hyperlinks as you see fit.
+This course is designed as a self-paced, self-guided course. Some sections are accompanied by a set of exercises that you can complete to test your knowledge. Each topic aims to explain the foundational concepts and practical usage of a particular tool or platform and provide you with the resources you need to learn more. While you can find below a recommended order of topics, you are free to explore the topics in any order you wish, following external and internal hyperlinks as you see fit.
 
 ## Recommended Order of Topics
 
@@ -27,6 +27,9 @@ This course is designed as a self-paced, self-guided course. Some sections are a
     - [Exercise: Test your understanding](exercises/ros2_asgn.md)
 4. [ROS and C++ Exercise: AI mechanics for controlling a game](game/README.md)
 5. [ROS2 Exercise: Full stack development with F1Tenth](F1Tenth/README.md)
+
+## [RL Car Racing](https://github.com/artrela/RL_Car_Racing/tree/97a08ae8ffca019fe2f20cc5a50658cff0a6548f)
+This is an independent course for an introduction to common reinforcement methods (RL) leveraging Gymnasium (formerly OpenAI Gym), developed by Alec Trela. 
 
 ## Contributing
 
