@@ -29,7 +29,7 @@ This course is designed as a self-paced, self-guided course. Some sections are a
 5. [ROS2 Exercise: Full stack development with F1Tenth](F1Tenth/README.md)
 
 ## [RL Car Racing](https://github.com/artrela/RL_Car_Racing/tree/97a08ae8ffca019fe2f20cc5a50658cff0a6548f)
-This is an independent course for an introduction to common reinforcement methods (RL) leveraging Gymnasium (formerly OpenAI Gym), developed by Alec Trela. 
+[RL Car Racing](https://github.com/artrela/RL_Car_Racing/tree/97a08ae8ffca019fe2f20cc5a50658cff0a6548f) is an independent course for an introduction to common reinforcement methods (RL) leveraging Gymnasium (formerly OpenAI Gym), developed by Alec Trela. 
 
 ## Contributing
 
