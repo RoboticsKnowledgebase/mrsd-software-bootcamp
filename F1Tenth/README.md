@@ -9,6 +9,9 @@ Goal of this tutorial is to get familiarized with full stack deployment using RO
 - (optional) RRT local planner  
 - Pure Pursuit controller
 
+Much of this exercise is thanks to [UPenn's F1Tenth course](https://roboracer.ai/).
+
+
 ## II. Installing F1Tenth simulator
 
 We will be using F1Tenth simulator for this workshop. Navigate to [f1tenth_gym_ros](f1tenth_gym_ros/README.md) for instructions on how to install and get started with using F1Tenth simulator
