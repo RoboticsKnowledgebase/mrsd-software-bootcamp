@@ -172,9 +172,6 @@ This course is designed as a self-paced, self-guided course. Some sections are a
 ## [RL Car Racing](https://github.com/artrela/RL_Car_Racing/tree/97a08ae8ffca019fe2f20cc5a50658cff0a6548f)
 [RL Car Racing](https://github.com/artrela/RL_Car_Racing/tree/97a08ae8ffca019fe2f20cc5a50658cff0a6548f) is an independent course for an introduction to common reinforcement methods (RL) leveraging Gymnasium (formerly OpenAI Gym), developed by Alec Trela. 
 
-## [RL Car Racing](https://github.com/artrela/RL_Car_Racing/tree/97a08ae8ffca019fe2f20cc5a50658cff0a6548f)
-[RL Car Racing](https://github.com/artrela/RL_Car_Racing/tree/97a08ae8ffca019fe2f20cc5a50658cff0a6548f) is an independent course for an introduction to common reinforcement methods (RL) leveraging Gymnasium (formerly OpenAI Gym), developed by Alec Trela. 
-
 ## Contributing
 
 If you find a typo or error in the course material, please submit a pull request to the [GitHub repository](https://github.com/roboticsknowledgebase/mrsd-software-bootcamp). If you have a suggestion for a new topic, please open an issue on the repository.
