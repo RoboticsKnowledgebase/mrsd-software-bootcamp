@@ -67,7 +67,7 @@ You should use ROS Docker if:
 
 - You want to run ROS on a platform that does not support ROS natively, such as a Single Board Computer (SBC).
 - You have relatively simple networking requirements.
-- You do not extensive and comprehensive hardware access directly from your application.
+- You do not need extensive and comprehensive hardware access directly from your application.
 
 ## References
 

@@ -1,0 +1,2 @@
+# What is Gazebo?
+[Gazebo](https://gazebosim.org/home) is an open-source robotics simulator widely used for testing and developing robotic systems in realistic environments. It supports multiple physics engines (such as ODE, Bullet, Simbody, or DART), allowing you to accurately model robots, terrains, and sensors. It allows you to simulate realistic sensor data amd dynamic interactions, engineer different environment settings, prototype and refine robot designs, test control stacks, integrate with ROS, and many more capabilities.
