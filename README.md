@@ -75,14 +75,35 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         </ol>
     </ol>
 
-3. Simulation 
+<!-- 3. Robotics Basics
     <ol type="A">
-        <li>Basics</li>
+        <li>Sensing (Perception)</li>
         <ol type="a">
-            <li><a href="https://roboticsknowledgebase.com/wiki/robotics-project-guide/choose-a-sim/">Simulation Basics</a></li>
+            <li><a href="https://roboticsknowledgebase.com/wiki/sensing/">RoboticsKnowledgebase - Sensing</a></li>
             <li></li>
         </ol>
+        <li>Actuation (Motion and Control)</li>
+        <ol type="a">
+            <li></li>
+            <li></li>
+        </ol>
+   </ol> -->
+
+3. Robotics Basics with <code>F1Tenth-Gym-ROS</code>
+    <ol type="A">
+        <li><a href="https://roboticsknowledgebase.com/wiki/robotics-project-guide/choose-a-sim/">Simulation Basics</a></li>
         <li><code>F1Tenth-Gym-ROS</code></li>
+        <ol type="a">
+            <li><a href="simulation/f1tenth_gym_ros_basics.md"><code>F1Tenth-Gym-ROS</code> environment with ROS2</a></li>
+            <li><a href="simulation/f1tenth_gym_ros_exercise.md"><code>F1Tenth-Gym-ROS</code> basic exercises</a></li>
+        </ol>
+        <li>Sensing in <code>F1Tenth-Gym-ROS</code></li>
+        <ol type="a">
+            <li><a href="https://roboticsknowledgebase.com/wiki/sensing/">RoboticsKnowledgebase - Sensing</a></li>
+            <li>Lidar</li>
+            <li>IMU</li>
+        </ol>
+        <li>Actuation in <code>F1Tenth-Gym-ROS</code></li>
         <ol type="a">
             <li></li>
             <li></li>
@@ -94,21 +115,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         </ol>
     </ol>
 
-4. Sensor
-    <ol type="A">
-        <li>Sensor basics</li>
-        <ol type="a">
-            <li><a href="https://roboticsknowledgebase.com/wiki/sensing/">RoboticsKnowledgebase - Sensing</a></li>
-            <li></li>
-        </ol>
-        <li>Sensors in <code>F1Tenth-Gym-ROS</code></li>
-        <ol type="a">
-            <li>Lidar</li>
-            <li>IMU</li>
-        </ol>
-   </ol>
-
-5. Algorithms
+4. Algorithms
    <ol type="A">
         <li>Mapping algorithms
             <ol type="a">
@@ -141,8 +148,8 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         </li>
     </ol>
 
-6. Integrate and Compare Performance
-7. Writing a Technical Report
+5. Integrate and Compare Performance
+6. Writing a Technical Report
 
 <!-- ### DEPRECATED
 1. Linux basics
