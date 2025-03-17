@@ -24,28 +24,6 @@ This course is designed as a self-paced, self-guided course. Some sections are a
             <li><a href="documentation/markdown.md">Writing Documentation in Markdown</a></li>
             <li><a href="exercises/job-control.md">Job Control</a></li>
         </ol>
-        <li>Development environment (Docker)</li>
-        <ol type="a">
-            <li></li>
-            <li></li>
-        </ol>
-        <li>Git and Collaborating</li>
-        <ol type="a">
-            <li>Basics</li>
-            <li>Making your GitHub respository</li>
-            <li>Making your first branch</li>
-            <li>Making your first issue</li>
-        </ol>
-        <li>Basic Programming</li>
-        <ol type="a">
-            <li>List of online resources</li>
-        </ol>
-        <li>IDEs and Code Editors</li>
-        <ol type="a">
-            <li>What is VS Code and why use it?</li>
-            <li>How to config your project in VS Code</li>
-            <li>How to debug in VS Code</li>
-        </ol>
         <li>ROS Basics</li>
         <ol type="a">
             <li><a href="ros/ros-101.md">Introduction</a></li>
@@ -57,6 +35,23 @@ This course is designed as a self-paced, self-guided course. Some sections are a
             <li><a href="exercises/ros2_asgn.md">Exercise: Test your understanding</a></li>
             <li> <a href="game/README.md">ROS and C++ Exercise: AI mechanics for controlling a game</a></li>
             <li><a href="F1Tenth/README.md">ROS2 Exercise: Full stack development with F1Tenth</a></li>
+        </ol>
+        <li>Version Control and Collaborating through GitHub</li>
+        <ol type="a">
+            <li><a href="version-control/version-control-basics.md">Version control basics</a></li>
+            <li><a href="version-control/git.md">Git Basics</a></li>
+            <li><a href="version-control/github.md">GitHub Basics and Exercises</a></li>
+            <li><a href="version-control/git_pull_request_exercise.md">Exercise: Pull & Request exercise</a></li>
+        </ol>
+        <li>Basic Programming</li>
+        <ol type="a">
+            <li>Online resources</li>
+        </ol>
+        <li>IDEs and Code Editors</li>
+        <ol type="a">
+            <li>What is VS Code and why use it?</li>
+            <li>How to config your project in VS Code</li>
+            <li>How to debug in VS Code</li>
         </ol>
     </ol>
 

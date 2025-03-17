@@ -8,7 +8,7 @@
 - Creating launch files
 
 ## Before you start
-It's highly recommended to install Ubuntu natively on your machine for developement in future using ROS2. However, if it's impossible for you to do so, you can still follow through the tutoorials inside Docker containers. In the following instructions, if you have Ubuntu installed natively, ignore directions for using Docker.
+It's highly recommended to install Ubuntu natively on your machine for developement in future using ROS2. However, if it's impossible for you to do so, you can still follow through the tutorials inside Docker containers. In the following instructions, if you have Ubuntu installed natively, ignore directions for using Docker.
 
 ## 1. Overview
 
