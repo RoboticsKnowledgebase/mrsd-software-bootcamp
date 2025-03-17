@@ -11,6 +11,8 @@ It is important to note that the focus of this BootCamp is not learning the algo
 
 This course is designed as a self-paced, self-guided course. Some sections are accompanied by a set of exercises that you can complete to test your knowledge. Each topic aims to explain the foundational concepts and practical usage of a particular tool or platform and provide you with the resources you need to learn more. While you can find below a recommended order of topics, you are free to explore the topics in any order you wish, following external and internal hyperlinks as you see fit.
 
+Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://roboticsknowledgebase.com/) for additional resources that complement this BootCamp. The [RoboticsKnowledgebase](https://roboticsknowledgebase.com/) contains not only basic knowledge related to software skills needed for robotics but also robotics-project-specific knowledge that starting engineers and students might find useful.
+
 ## Recommended Order of Topics
 
 1. Basics
@@ -45,13 +47,14 @@ This course is designed as a self-paced, self-guided course. Some sections are a
         </ol>
         <li>Basic Programming</li>
         <ol type="a">
+            <li><a href="https://roboticsknowledgebase.com/wiki/robotics-project-guide/choose-a-language/">Choosing a Programming Language for Robotics</a></li>
             <li><a href="documentation/programming_basics.md">Online resources</a></li>
         </ol>
         <li>IDEs and Code Editors</li>
         <ol type="a">
-            <li>What is VS Code and why use it?</li>
-            <li>How to config your project in VS Code</li>
-            <li>How to debug in VS Code</li>
+            <li><a href="https://roboticsknowledgebase.com/wiki/tools/code-editors-introduction-to-vs-code-and-vim/">What is VS Code and why use it?</a></li>
+            <li><a href="https://code.visualstudio.com/docs/editor/settings">How to config your workspace in VS Code</a></li>
+            <li><a href="https://code.visualstudio.com/docs/editor/debugging">How to debug in VS Code</a></li>
         </ol>
     </ol>
 
@@ -76,7 +79,7 @@ This course is designed as a self-paced, self-guided course. Some sections are a
     <ol type="A">
         <li>Basics</li>
         <ol type="a">
-            <li></li>
+            <li><a href="https://roboticsknowledgebase.com/wiki/robotics-project-guide/choose-a-sim/">Simulation Basics</a></li>
             <li></li>
         </ol>
         <li><code>F1Tenth-Gym-ROS</code></li>
@@ -95,7 +98,7 @@ This course is designed as a self-paced, self-guided course. Some sections are a
     <ol type="A">
         <li>Sensor basics</li>
         <ol type="a">
-            <li></li>
+            <li><a href="https://roboticsknowledgebase.com/wiki/sensing/">RoboticsKnowledgebase - Sensing</a></li>
             <li></li>
         </ol>
         <li>Sensors in <code>F1Tenth-Gym-ROS</code></li>
