@@ -50,7 +50,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
             <li><a href="https://roboticsknowledgebase.com/wiki/robotics-project-guide/choose-a-language/">Choosing a Programming Language for Robotics</a></li>
             <li><a href="documentation/programming_basics.md">Online resources</a></li>
         </ol>
-        <li>IDEs and Code Editors</li>
+        <li>Code Editors and Custom Workspace for Programming</li>
         <ol type="a">
             <li><a href="https://roboticsknowledgebase.com/wiki/tools/code-editors-introduction-to-vs-code-and-vim/">What is VS Code and why use it?</a></li>
             <li><a href="https://code.visualstudio.com/docs/editor/settings">How to config your workspace in VS Code</a></li>
