@@ -45,7 +45,7 @@ This course is designed as a self-paced, self-guided course. Some sections are a
         </ol>
         <li>Basic Programming</li>
         <ol type="a">
-            <li>Online resources</li>
+            <li><a href="documentation/programming_basics.md">Online resources</a></li>
         </ol>
         <li>IDEs and Code Editors</li>
         <ol type="a">
