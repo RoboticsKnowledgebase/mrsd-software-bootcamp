@@ -14,7 +14,7 @@ def keyboard_to_joy():
 
     while not rospy.is_shutdown():
         pygame.event.pump()  # Process pygame events
-
+        
         # Create Joy message
         joy_msg = Joy()
         joy_msg.header.stamp = rospy.Time.now()

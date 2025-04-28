@@ -5,7 +5,10 @@
 The MRSD Software Bootcamp aims to equip incoming MRSD students (and other aspiring robotics engineers) with the software skills needed to initiate and complete a robotics project from start to finish. 
 Much of this bootcamp is based on [F1Tenth](https://roboracer.ai/) (now `RoboRacer`), sourced from courses taught at [UPenn](https://github.com/f1tenth) and [CMU](https://github.com/f1tenth-cmu). 
 Students will learn how to setup development environments (Git, Docker, simulation, etc.), implement various algorithms for the F1Tenth vehicle, incorporate multiple modules into a single system for the vehicle, and test their algorithms in the `F1Tenth-Gym-ROS` simulation. 
-It is important to note that the focus of this BootCamp is not learning the algorithm details or mathematics behind them. Although these are important and the BootCamp provides resources to learn about them, the primary objective of this BootCamp is help students *learn the software skills needed to implement them*.
+
+This BootCamp utilizes both Python and C++ to emphasize that the underlying programming concepts remain consistent regardless of the language used. While some sections are written in Python and others in C++, the idea is that if you're comfortable in one, you can apply the same principles in the other. Note that while the BootCamp doesn't dive deeply into programming techniques, Section 1(D) does provide additional resources for those needing further guidance.
+
+Note that some parts of this BootCamp will lead you directly to external links. 
 
 ## How to Use This Course
 
@@ -16,6 +19,8 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
 ## Recommended Order of Topics
 
 1. Basics
+   
+   If you are new to software development, start here. It covers a lot of the necessary concepts and skills that are required for software development. 
     <ol type="A">
         <li>Linux Basics</li>
         <ol type="a">
@@ -58,15 +63,15 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         </ol>
     </ol>
 
-2. Mathematics for Robotics
+2. Practical Math Tools in Python for Robotics
 
-    *Why include math in a software bootcamp?* While this BootCamp focuses on developing software for robots, a fundamental understanding of math is essential to grasp the algorithms behind robotic systems. Though not the primary focus, this section provides the necessary math foundations to complete exercises effectively and build a strong foundation for robotics engineering.
+    You’ll need a working knowledge of key mathematical tools to implement and debug the algorithms that make robots move, perceive, and plan. The goal of Section 2(A) is not to teach an entire math curriculum, but to equip you with just enough theory — and the right Python libraries — to tackle the coding exercises with confidence. In Section 2(B), we will get into the details of F1Tenth vehicle kinematics & dynamics so that you can implement the algorithms in Section 4.
     <ol type="A">
-        <li>(Something that you probably already know)</li>
+        <li>Math tools you’ll lean on every day</li>
         <ol type="a">
-            <li>Linear Algebra</li>
-            <li>Calculus</li>
-            <li>Optimization</li>
+            <li><a href="math/linear_algebra_numpy.md">Linear Algebra and <code>NumPy</code></a></li>
+            <li>Calculus and <code>SymPy</code></li>
+            <li>Optimization and <code>SciPy</code></li>
         </ol>
         <li>Robot kinematics and dynamics (for F1Tenth)</li>
         <ol type="a">
