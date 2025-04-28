@@ -75,8 +75,8 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         </ol>
         <li>Robot kinematics and dynamics (for F1Tenth)</li>
         <ol type="a">
-            <li><a href="math/f1tenth_vehicle_states.md">System Dynamics & F1Tenth Vehicle States</a></li>
-            <li><a href="math/f1tenth_vehicle_dynamics.md">F1Tenth Vehicle Kinematics & Dynamics (single track model)</a></li>
+            <li><a href="math/system_dynamics.md">System Dynamics</a></li>
+            <li><a href="math/f1tenth_vehicle_dynamics.md">F1Tenth Vehicle States & Dynamics (single track model)</a></li>
         </ol>
     </ol>
 
