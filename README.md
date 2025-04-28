@@ -70,7 +70,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         <li>Math tools you’ll lean on every day</li>
         <ol type="a">
             <li><a href="math/linear_algebra_numpy.md">Linear Algebra and <code>NumPy</code></a></li>
-            <li>Calculus and <code>SymPy</code></li>
+            <li><a href="math/calculus_sympy.md">Calculus and <code>SymPy</code></a></li>
             <li>Optimization and <code>SciPy</code></li>
         </ol>
         <li>Robot kinematics and dynamics (for F1Tenth)</li>
