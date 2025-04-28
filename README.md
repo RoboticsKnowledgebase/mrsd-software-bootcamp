@@ -63,7 +63,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         </ol>
     </ol>
 
-2. Practical Math Tools in Python for Robotics
+2. Practical Math Tools in Python for Robotics & System Dynamics
 
     You’ll need a working knowledge of key mathematical tools to implement and debug the algorithms that make robots move, perceive, and plan. The goal of Section 2(A) is not to teach an entire math curriculum, but to equip you with just enough theory — and the right Python libraries — to tackle the coding exercises with confidence. In Section 2(B), we will get into the details of F1Tenth vehicle states & dynamics so that you can implement the algorithms in Section 4. 
     <ol type="A">
@@ -73,7 +73,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
             <li><a href="math/calculus_sympy.md">Calculus and <code>SymPy</code></a></li>
             <li><a href="math/optimization_scipy.md">Optimization and <code>SciPy</code></a></li>
         </ol>
-        <li>Robot kinematics and dynamics (for F1Tenth)</li>
+        <li>Robot dynamics (for F1Tenth)</li>
         <ol type="a">
             <li><a href="math/system_dynamics.md">System Dynamics</a></li>
             <li><a href="math/f1tenth_vehicle_dynamics.md">F1Tenth Vehicle States & Dynamics (single track model)</a></li>
