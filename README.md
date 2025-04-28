@@ -3,7 +3,7 @@
 ## About This Course
 
 The MRSD Software Bootcamp aims to equip incoming MRSD students (and other aspiring robotics engineers) with the software skills needed to initiate and complete a robotics project from start to finish. 
-Much of this bootcamp is based on [F1Tenth](https://roboracer.ai/) (now `RoboRacer`), sourced from courses taught at [UPenn](https://github.com/f1tenth) and [CMU](https://github.com/f1tenth-cmu). 
+Much of this bootcamp is based on [F1Tenth](https://roboracer.ai/) (now `RoboRacer`), sourced from courses taught at [UPenn](https://github.com/f1tenth) by Dr. Rahul Mangharam and [CMU](https://github.com/f1tenth-cmu) by Dr. John Dolan.
 Students will learn how to setup development environments (Git, Docker, simulation, etc.), implement various algorithms for the F1Tenth vehicle, incorporate multiple modules into a single system for the vehicle, and test their algorithms in the `F1Tenth-Gym-ROS` simulation. 
 
 This BootCamp utilizes both Python and C++ to emphasize that the underlying programming concepts remain consistent regardless of the language used. While some sections are written in Python and others in C++, the idea is that if you're comfortable in one, you can apply the same principles in the other. Note that while the BootCamp doesn't dive deeply into programming techniques, Section 1(D) does provide additional resources for those needing further guidance.
@@ -65,7 +65,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
 
 2. Practical Math Tools in Python for Robotics
 
-    You’ll need a working knowledge of key mathematical tools to implement and debug the algorithms that make robots move, perceive, and plan. The goal of Section 2(A) is not to teach an entire math curriculum, but to equip you with just enough theory — and the right Python libraries — to tackle the coding exercises with confidence. In Section 2(B), we will get into the details of F1Tenth vehicle kinematics & dynamics so that you can implement the algorithms in Section 4.
+    You’ll need a working knowledge of key mathematical tools to implement and debug the algorithms that make robots move, perceive, and plan. The goal of Section 2(A) is not to teach an entire math curriculum, but to equip you with just enough theory — and the right Python libraries — to tackle the coding exercises with confidence. In Section 2(B), we will get into the details of F1Tenth vehicle states & dynamics so that you can implement the algorithms in Section 4. 
     <ol type="A">
         <li>Math tools you’ll lean on every day</li>
         <ol type="a">
@@ -75,8 +75,8 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         </ol>
         <li>Robot kinematics and dynamics (for F1Tenth)</li>
         <ol type="a">
-            <li><a href="math/f1tenth_vehicle_kinematics.md">F1Tenth vehicle kinematics (single track model)</a></li>
-            <li><a href="math/f1tenth_vehicle_dynamics.md">F1Tenth vehicle dynamics (single track model with linear tire model)</a></li>
+            <li><a href="math/f1tenth_vehicle_states.md">System Dynamics & F1Tenth Vehicle States</a></li>
+            <li><a href="math/f1tenth_vehicle_dynamics.md">F1Tenth Vehicle Kinematics & Dynamics (single track model)</a></li>
         </ol>
     </ol>
 
