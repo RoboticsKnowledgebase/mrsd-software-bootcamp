@@ -99,10 +99,12 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         <li><a href="https://roboticsknowledgebase.com/wiki/robotics-project-guide/choose-a-sim/">Simulation Basics</a></li>
         <li><code>F1Tenth-Gym-ROS</code></li>
         <ol type="a">
-            <li><a href="simulation/f1tenth_gym_ros_basics.md"><code>F1Tenth-Gym-ROS</code> environment with ROS2</a></li>
-            <li><a href="simulation/f1tenth_gym_ros_exercise.md"><code>F1Tenth-Gym-ROS</code> basic exercises</a></li>
+            <li><a href="https://github.com/f1tenth-cmu/f1tenth_gym_ros">Setting up the <code>F1Tenth-Gym-ROS</code> environment with ROS2</a></li>
+            <li><a href="simulation/f1tenth_automatic_emergency_braking.md"><code>F1Tenth-Gym-ROS</code> exercise 1: Automatic Emergency Braking</a></li>
+            <li><a href="simulation/f1tenth_wall_following.md"><code>F1Tenth-Gym-ROS</code> exercise 2: Wall Following</a></li>
+            <li><a href="simulation/f1tenth_gap_following.md"><code>F1Tenth-Gym-ROS</code> exercise 3: Gap Following</a></li>
         </ol>
-        <li>Sensing in <code>F1Tenth-Gym-ROS</code></li>
+        <!-- <li>Sensing in <code>F1Tenth-Gym-ROS</code></li>
         <ol type="a">
             <li><a href="https://roboticsknowledgebase.com/wiki/sensing/">RoboticsKnowledgebase - Sensing</a></li>
             <li>Lidar</li>
@@ -112,7 +114,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         <ol type="a">
             <li></li>
             <li></li>
-        </ol>
+        </ol> -->
         <li>Custom robot and simulation development in Gazebo</li>
         <ol type="a">
             <li></li>
