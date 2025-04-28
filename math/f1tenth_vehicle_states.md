@@ -10,8 +10,8 @@ Vehicle states, including position, velocity, and orientation, are fundamental c
 
 ```mermaid
 flowchart LR
-    x[Input: x]
-    dyn[System Dynamics: xdot]
+    x[Input: $x$]
+    dyn[System Dynamics: $\dot{x}$]
     y[Output: y]
     
     x --> dyn
