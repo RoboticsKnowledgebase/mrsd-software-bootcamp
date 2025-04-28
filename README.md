@@ -71,12 +71,12 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         <ol type="a">
             <li><a href="math/linear_algebra_numpy.md">Linear Algebra and <code>NumPy</code></a></li>
             <li><a href="math/calculus_sympy.md">Calculus and <code>SymPy</code></a></li>
-            <li>Optimization and <code>SciPy</code></li>
+            <li><a href="math/optimization_scipy.md">Optimization and <code>SciPy</code></a></li>
         </ol>
         <li>Robot kinematics and dynamics (for F1Tenth)</li>
         <ol type="a">
-            <li>F1Tenth vehicle kinematics (single track model)</li>
-            <li>F1Tenth vehicle dynamics (single track model with linear tire model)</li>
+            <li><a href="math/f1tenth_vehicle_kinematics.md">F1Tenth vehicle kinematics (single track model)</a></li>
+            <li><a href="math/f1tenth_vehicle_dynamics.md">F1Tenth vehicle dynamics (single track model with linear tire model)</a></li>
         </ol>
     </ol>
 
