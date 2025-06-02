@@ -1,5 +1,7 @@
 # ROS Action Server
 
+<p style="color: red; font-weight: bold;">This is for ROS 1, not ROS 2. We are keeping this for reference to users who want to use ROS 1.</p>
+
 ## What is an Action Server?
 
 An action server is a node that provides an action. An action is a long-running task that can be awaited and provides feedback on progress. Actions are a powerful way for nodes to communicate with each other and await long-running actions while receiving feedback on progress. Actions can be used to perform motor control or locomotion, or any other task that benefits from being awaited (which means that it can be pre-empted) and has definite progress feedback to provide, as opposed to a service which is a one-shot request-response mechanism.

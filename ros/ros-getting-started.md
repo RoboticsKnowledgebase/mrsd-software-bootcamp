@@ -1,16 +1,20 @@
-# Getting Started with ROS for Robotics
+# Getting Started with ROS/ROS2 for Robotics
 
 There are several things to consider while getting started with ROS for a robotics project. This guide will help you get started with ROS by providing an overview of the ROS ecosystem and various design considerations.
 
 ## ROS 1 vs ROS 2: Which Version Should I Use?
 
-ROS 1 is the original version of ROS, which is currently in maintenance mode. ROS 2 is the next generation of ROS, which is currently under active development. ROS 2 is not backwards compatible with ROS 1, but it is possible to run ROS 1 and ROS 2 nodes side-by-side. ROS 1 and ROS 2 are both supported by the [Open Robotics](https://www.openrobotics.org/) organization.
+ROS 1 is the original version of ROS, which is currently no longer officially supported. ROS 2 is the new generation of ROS, which is currently under active deployment and support. ROS 2 is not backwards compatible with ROS 1, but it is possible to run ROS 1 and ROS 2 nodes side-by-side. ROS 1 and ROS 2 are both supported by the [Open Robotics](https://www.openrobotics.org/) organization.
 
-ROS 2 is the recommended version of ROS for new projects, while ROS 1 is still widely used in existing projects due to its maturity, stability and sheer number of supported packages and robotic platforms. That said, ROS 2 is quickly catching up in terms of supported packages and platforms, and it is expected that ROS 2 will eventually replace ROS 1 as the de facto standard for robotic software development.
+ROS 2 is the recommended version of ROS for new projects, while ROS 1 is still widely used in existing projects due to its maturity, stability and sheer number of supported packages and robotic platforms. That said, ROS 2 is quickly catching up in terms of supported packages and platforms, and it is expected that ROS 2 will eventually replace ROS 1 as the de facto standard for robotic software development. As a matter of fact, in most of MRSD projects and courses, ROS 2 has already became the de facto standard, as well as in most of the industry jobs.
 
 ROS 2 is designed to be more flexible, scalable and secure than ROS 1. It is also designed to be more portable across different hardware platforms and operating systems. Since ROS 1 was designed as a tool for academic and research purposes, it was not designed for secure, safety-critical or real-time systems. ROS 2 is designed to be more suitable for these types of applications.
 
+<!-- <p style="color: red; font-weight: bold;">Please install only ROS 2 for the Bootcamp.</p> -->
+
 ### 1. ROS 1 Installation
+
+<p style="color: red; font-weight: bold;">Please install only ROS 2 for the Bootcamp.</p>
 
 ROS 1 is supported on Ubuntu Linux, OS X, and Windows.
 

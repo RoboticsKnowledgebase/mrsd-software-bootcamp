@@ -181,7 +181,7 @@ print("state after 0.1 s:", x)
 
 $$
 \begin{aligned}
-\dot x_1 &= x_2 \\[6pt]
+\dot x_1 &= x_2 \\
 \dot x_2 &= -\frac{g}{l}\,\sin x_1 - \frac{b}{I}\,x_2 + \frac{1}{I}\,u
 \end{aligned}
 $$

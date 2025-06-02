@@ -1,6 +1,6 @@
 # Version Control Systems
 
-Version control or source control is the practice of tracking and managing changes to software code. Version control software(VCS) are software tools that help software teams manage changes to source code over time. ([1])
+Version control or source control is the practice of tracking and managing changes to software code. Version control software(VCS) are software tools that help software teams manage changes to source code over time. (*[What is Version Control? | Atlassian](https://www.atlassian.com/git/tutorials/what-is-version-control)*)
 
 A VCS also offers collaborative utilities to share and integrate these changes in source files to other VCS users. A VCS will track the addition, deletion, and modification of files in a directory hierarchy. Such a directory structure within which all source file and metadata changes are tracked is called a _repository_. With each source file, a VCS will track additions, deletions and modifications of the lines of text within that file.
 
@@ -31,12 +31,10 @@ Concurrency model is the way in which the VCS handles concurrent changes to the 
 
 ## References
 
-- [What is Version Control? | Atlassian][1]
 - [Version Control Software | BitBucket][2]
 - [Version Control | GitLab][3]
 - [Versioning Models | Version Control with Subversion][4]
 
-[1]: https://www.atlassian.com/git/tutorials/what-is-version-control
 [2]: https://bitbucket.org/product/version-control-software
 [3]: https://about.gitlab.com/topics/version-control/
 [4]: https://edoras.sdsu.edu/doc/svn-book-html-chunk/svn.basic.vsn-models.html

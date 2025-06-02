@@ -32,7 +32,7 @@ Kubernetes is an open-source container-orchestration system for automating appli
 
 ### How to install Docker?
 
-#### With Docker-ce
+#### With Docker
 
 This is the standard way of installing docker as recommended on the official docker documentation [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/). This is the only option if you are on windows or macOS. For ubuntu, there is also an option to install docker.io package using Debian easily.
 

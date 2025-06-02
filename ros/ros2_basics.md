@@ -22,7 +22,7 @@ It'll be helpful to read these tutorials if you're stuck:
 
 ## 2.1 Getting ready **(Native Ubuntu)**
 
-Install ROS 2 following the instructions here: [https://docs.ros.org/en/foxy/Installation.html](https://docs.ros.org/en/foxy/Installation.html).
+Install ROS 2 following the instructions here: [https://docs.ros.org/en/foxy/Installation.html](https://docs.ros.org/en/foxy/Installation.html). Note that ROS-Foxy is only compatible with Ubuntu 20.04. 
 
 Next, create a workspace:
 ```bash

@@ -18,7 +18,7 @@ We will be using F1Tenth simulator for this workshop. Navigate to [f1tenth_gym_r
 
 ## III. Localization on the simulator
 
-Simulator comes with an inbuilt localization.  You can read the car's position relative to the map under /tf or /pose topics. 
+Simulator comes with an inbuilt localization.  You can read the car's position relative to the map under `/tf` or `/pose` topics. 
 
 ## IV. Logging Waypoints
 
