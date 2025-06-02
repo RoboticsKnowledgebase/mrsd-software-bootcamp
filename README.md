@@ -16,6 +16,8 @@ This course is designed as a self-paced, self-guided course. Some sections are a
 
 Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://roboticsknowledgebase.com/) for additional resources that complement this BootCamp. The [RoboticsKnowledgebase](https://roboticsknowledgebase.com/) contains not only basic knowledge related to software skills needed for robotics but also robotics-project-specific knowledge that starting engineers and students might find useful.
 
+\* If you want to get some hands-on experience with introductory material on reinforcement learning, go to [RL Car Racing](#rl-car-racing)!
+
 ## Recommended Order of Topics
 
 1. Basics

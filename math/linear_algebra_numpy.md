@@ -99,7 +99,7 @@ import numpy as np
 |------|------|
 | **Create** | `a = np.array([1, 2, 3])`<br>`Z = np.zeros((3, 4))`<br>`I = np.eye(4)` |
 | **Shape** | `a.shape`<br>`a.reshape(3, 1)` |
-| **Index / slice** | `a[0]`<br>`A[1:3, ::-1]`<br>boolean masks |
+| **Index / slice** | `a[0]`<br>`A[1:3, ::-1]` (boolean masks) |
 | **Math** | `a + b`<br>`a * b` (element-wise)<br>`np.dot(A, B)` or `A @ B` |
 | **Broadcasting** | `A + b` (vector `b` auto-expands to rows of `A`) |
 | **Linear algebra** | `np.linalg.inv(A)`<br>`np.linalg.eig(A)`<br>`np.linalg.svd(A)` |
