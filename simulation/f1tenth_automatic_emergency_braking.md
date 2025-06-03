@@ -1,13 +1,5 @@
 # F1Tenth Exercise 1: Automatic Emergency Braking
 
-NOTE: NEED TO REVISE
-
-**TODO'S**
-
-1. Have the students make a new repo in their github account.
-2. Change the instructions so that it's BootCamp-compatible.
-
-
 > This exercise is based on [CMU 16663 - F1Tenth Course :: Lab 2](https://github.com/f1tenth-cmu/f1tenth_lab2).
 
 ## I. Learning Goals
@@ -66,7 +58,7 @@ Note the following topic names for your publishers and subscribers:
 - `Odometry`: /ego_racecar/odom, specifically, the longitudinal velocity of the vehicle can be found in `twist.twist.linear.x`
 - `AckermannDriveStamped`: /drive
 
-## V: Deliverables and Submission
+## V: Exercises
 You can implement this node in either C++ or Python. A skeleton package is already provided in the repo that you can use. If you're using docker, develop **directly in the simulation container** provided, and put your package in `/sim_ws/src` alongside the simulation package.
 When following the instruction in the simulation repo, the repo directory will be mounted to the sim container. You can also add extra volumes mounted for your convenience when editing the files. For example, if you're using the `rocker` tool:
 
@@ -78,10 +70,10 @@ Or if you're using `docker-compose`, add an extra line `- <path_to_your_package_
 
 Note that if you're using Windows, make sure your files have Unix style line endings. You can use `dos2unix` or have correct settings in your text editor.
 
-**Deliverable 1**: After you're finished, update the entire skeleton package directory with your `safety_node` package and submit the zipped sim_ws to Canvas. Your code should start and run in simulation smoothly.
+**Exercise 1**: After you're finished, update the entire skeleton package directory with your `safety_node` package.. Your code should start and run in simulation smoothly.
 
-**Deliverable 2**: Make a screen cast of running your safety node in the simulation. You can use Kazam for ubuntu/linux and inbuilt video recorder from gamebar for windows 10/11 or QuickTime Player for MacOs. Drive the car with keyboard teleop along the hallways of Levine, showing it doesn't brake when travelling straight in the hallway. You need to show that your safe node doesn't generate false positives. i.e. The car doesn't suddenly stop while travelling down the hallway. Then show the car driving towards a wall and braking correctly. Upload your video to YouTube (unlisted) and include a link to the video in **`SUBMISSION.md`**.
+**Exercise 2**: Make a screen cast of running your safety node in the simulation. You can use Kazam for ubuntu/linux and inbuilt video recorder from gamebar for windows 10/11 or QuickTime Player for MacOs. Drive the car with keyboard teleop along the hallways of Levine, showing it doesn't brake when travelling straight in the hallway. You need to show that your safe node doesn't generate false positives. i.e. The car doesn't suddenly stop while travelling down the hallway. Then show the car driving towards a wall and braking correctly. 
 
-**(optional) Deliverable 3**: For deliverable 2, you do not need to demonstate emergency braking while turning but only when it's moving straight. When the vehicle turns, there is also a lateral veocity component of the centre of mass of the vehicle. You can assume kinematic bicycle model for the vehicle assuming no lateral slip at the tires and derive the lateral velocity and thus the velocity direction of the car. You can also assume Centre of Mass (CoM) of the car is at the same position as the lidar sensor mount. Refer to the kinematic model from [Link](https://www.mdpi.com/1424-8220/19/24/5430) for basic understanding of the kinematic bicycle model. You can take l_r=0.275 and l_f=0.055 for this case (refer launch/ego_racecar.xacro). In this case you will need to project the complete velocity vector on each beam to get the rate and not just the longitudinal velocity of the car. 
+**Exercise 3**: For Exercise 2, you do not need to demonstate emergency braking while turning but only when it's moving straight. When the vehicle turns, there is also a lateral veocity component of the centre of mass of the vehicle. You can assume kinematic bicycle model for the vehicle assuming no lateral slip at the tires and derive the lateral velocity and thus the velocity direction of the car. You can also assume Centre of Mass (CoM) of the car is at the same position as the lidar sensor mount. Refer to the kinematic model from [Link](https://www.mdpi.com/1424-8220/19/24/5430) for basic understanding of the kinematic bicycle model. You can take l_r=0.275 and l_f=0.055 for this case (refer launch/ego_racecar.xacro). In this case you will need to project the complete velocity vector on each beam to get the rate and not just the longitudinal velocity of the car. 
 
-Although not required for Deliverable 3, 'Rajesh Rajamani's Vehicle Dynamics and Control' chapter 2 [Link](https://link.springer.com/book/10.1007/978-1-4614-1433-9) is a nice reference to understand the lateral dynamics at high speeds when there would be considerable lateral slip at the tyres. 
+Although not required for Exercise 3, 'Rajesh Rajamani's Vehicle Dynamics and Control' chapter 2 [Link](https://link.springer.com/book/10.1007/978-1-4614-1433-9) is a nice reference to understand the lateral dynamics at high speeds when there would be considerable lateral slip at the tyres. 

@@ -108,26 +108,15 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         <li><a href="https://roboticsknowledgebase.com/wiki/robotics-project-guide/choose-a-sim/">Simulation Basics</a></li>
         <li><code>F1Tenth-Gym-ROS</code></li>
         <ol type="a">
-            <li><a href="https://github.com/f1tenth-cmu/f1tenth_gym_ros">Setting up the <code>F1Tenth-Gym-ROS</code> environment with ROS2</a></li>
+            <li><a href="https://github.com/f1tenth/f1tenth_gym_ros">Setting up the <code>F1Tenth-Gym-ROS</code> environment with ROS2</a></li>
             <li><a href="simulation/f1tenth_automatic_emergency_braking.md"><code>F1Tenth-Gym-ROS</code> exercise 1: Automatic Emergency Braking</a></li>
             <li><a href="simulation/f1tenth_wall_following.md"><code>F1Tenth-Gym-ROS</code> exercise 2: Wall Following</a></li>
             <li><a href="simulation/f1tenth_gap_following.md"><code>F1Tenth-Gym-ROS</code> exercise 3: Gap Following</a></li>
         </ol>
-        <!-- <li>Sensing in <code>F1Tenth-Gym-ROS</code></li>
-        <ol type="a">
-            <li><a href="https://roboticsknowledgebase.com/wiki/sensing/">RoboticsKnowledgebase - Sensing</a></li>
-            <li>Lidar</li>
-            <li>IMU</li>
-        </ol>
-        <li>Actuation in <code>F1Tenth-Gym-ROS</code></li>
-        <ol type="a">
-            <li></li>
-            <li></li>
-        </ol> -->
         <li>Custom robot and simulation development in Gazebo</li>
         <ol type="a">
-            <li></li>
-            <li></li>
+            <li> (still in development) </li>
+            <li> (still in development) </li>
         </ol>
     </ol>
 
@@ -135,37 +124,37 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
    <ol type="A">
         <li>Mapping algorithms
             <ol type="a">
-                <li>SLAM</li>
+                <li>SLAM (still in development)</li>
             </ol>
         </li>
         <li>Localization algorithms
             <ol type="a">
-                <li>Particle Filter: AMCL</li>
-                <li>EKF (Extended Kalman Filter)</li>
+                <li>Particle Filter: AMCL (still in development)</li>
+                <li>EKF (Extended Kalman Filter) (still in development)</li>
             </ol>
         </li>
         <li>Path planning algorithms
             <ol type="a">
-                <li>RRT (Rapidly Exploding Tree)</li>
-                <li>RRT*</li>
+                <li>RRT (Rapidly Exploding Tree) (still in development)</li>
+                <li>RRT* (still in development)</li>
             </ol>
         </li>
         <li>Control algorithms
             <ol type="a">
-                <li>Pure Pursuit</li>
-                <li>MPC (Model Predictive Control)</li>
+                <li>Pure Pursuit (still in development)</li>
+                <li>MPC (Model Predictive Control) (still in development)</li>
             </ol>
         </li>
         <li>Reinforcement Learning
             <ol type="a">
-                <li>Model-based RL</li>
-                <li>Model-free RL</li>  <!--: integrate Alec’s tutorial into the <code>F1Tenth-Gym-ROS</code> simulation.-->
+                <li>Model-based RL (still in development)</li>
+                <li><a href="#rl-car-racing">Model-free RL</a></li>
             </ol>
         </li>
     </ol>
 
-5. Integrate and Compare Performance
-6. Writing a Technical Report
+<!-- 5. Integrate and Compare Performance
+6. Writing a Technical Report -->
 
 
 ## [RL Car Racing](https://github.com/artrela/RL_Car_Racing/tree/97a08ae8ffca019fe2f20cc5a50658cff0a6548f)

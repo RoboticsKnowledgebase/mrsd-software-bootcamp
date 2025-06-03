@@ -1,13 +1,5 @@
 # F1Tenth Exercise 2: Wall Following
 
-NOTE: NEED TO REVISE
-
-**TODO'S**
-
-1. Have the students make a new repo in their github account.
-2. Change the instructions so that it's BootCamp-compatible.
-
-
 > This exercise is based on [CMU 16663 - F1Tenth Course :: Lab 3](https://github.com/f1tenth-cmu/f1tenth_lab3).
 
 ## I. Learning Goals
@@ -19,7 +11,7 @@ NOTE: NEED TO REVISE
 
 A PID controller is a way to maintain certain parameters of a system around a specified set point. PID controllers are used in a variety of applications requiring closed-loop control, such as in the VESC speed controller on your car.
 
-The general equation for a PID controller in the time domain, as discussed in lecture, is as follows:
+The general equation for a PID controller in the time domain, as discussed in [this lecture from UPenn](https://www.youtube.com/watch?v=qIpiqhO3ITY) (accompanying [lecture slides](https://docs.google.com/presentation/d/1jS9Iz6JN41SVbivpfTdgTTjx3ouGFKPNbCktN32Obi8/edit?usp=sharing) provided by CMU), is as follows:
 
 $$ u(t)=K_{p}e(t)+K_{i}\int_{0}^{t}e(t^{\prime})dt^{\prime}+K_{d}\frac{d}{dt}(e(t)) $$
 
@@ -30,7 +22,7 @@ Here, $K_p$, $K_i$, and $K_d$ are constants that determine how much weight each 
 In the context of our car, the desired distance to the wall should be our set point for our controller, which means our error is the difference between the desired and actual distance to the wall. This raises an important question: how do we measure the distance to the wall, and at what point in time? One option would simply be to consider the distance to the right wall at the current time $t$ (let's call it $D_t$). Let's consider a generic orientation of the car with respect to the right wall and suppose the angle between the car's x-axis and the axis in the direction along the wall is denoted by $\alpha$. We will obtain two laser scans (distances) to the wall:
 one 90 degrees to the right of the car's x-axis (beam b in the figure), and one (beam a) at an angle $\theta$ ( $0<\theta\leq70$ degrees) to the first beam. Suppose these two laser scans return distances a and b, respectively.
 
-![fig1](img/wall_following_lab_figure_1.png)
+![fig1](fig/wall_following_lab_figure_1.png)
 
 *Figure 1: Distance and orientation of the car relative to the wall*
 
@@ -48,7 +40,7 @@ However, we have a problem on our hands. Remember that this is a race: your car 
 
 $$D_{t+1}=D_t+L\sin(\alpha)$$
 
-![fig1](img/wall_following_lab_figure_2.png)
+![fig2](fig/wall_following_lab_figure_2.png)
 
 *Figure 2: Finding the future distance from the car to the wall*
 
@@ -67,6 +59,6 @@ So, in summary, here's what we need to do:
 5. Use the steering angle you computed in the previous step to compute a safe driving speed.
 6. Publish the steering angle and driving speed to the `/drive` topic in simulation.
 
-## IV. Implementation
+## IV. Exercise
 
 Implement wall following to make the car drive autonomously around the Levine Hall map. Follow the inner walls of Levine. Which means follow left if the car is going counter-clockwise in the loop. (The first race we run will be counter-clockwise). You can implement this node in either C++ or Python.
