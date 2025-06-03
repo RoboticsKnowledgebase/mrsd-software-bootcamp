@@ -80,6 +80,65 @@ For example, the steps are as follows if you are using Ubuntu 22.04:
     docker ps -a
     ```
 
+## `Dockerfile` that allows you to build a custom Docker image
+When you make a Docker container, you are automatically directed to the `root` directory. When using Ubuntu, it may not be recommended to run everything as `root`. Then, you might want to have a user within the Docker. However, if you delete the Docker container, that user directoy is also gone. 
+
+Also, you probably don't want to specify that the Docker container needs to start from ROS-Foxy all the time when you start a container. 
+
+For these reasons, and many other possible reasons, you can use a `Dockerfile`. A `Dockerfile` is just a plain text file named `Dockerfile` (no file extension) that contains instructions for building a custom Docker image. Think of it like a recipe: it tells Docker how to create a container environment exactly the way you want — e.g., install ROS, create a user, set paths, etc.
+
+1. Make a new folder for your Docker setup
+    
+    On your host, open terminal and run:
+    ```bash
+    mkdir -p ~/ros2_docker
+    cd ~/ros2_docker
+    ```
+
+1. Create the `Dockerfile`
+
+    Inside `~/ros2_docker`, run:
+    ```bash
+    touch Dockerfile
+    vim Dockerfile
+    ```
+    Paste the following into the file and save it:
+    ```vim
+    # Start from official ROS Foxy image
+    FROM ros:foxy
+
+    # Create a user named 'dino' with a home directory
+    RUN useradd -m -s /bin/bash dino \
+        && echo "dino ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+    # Switch to that user
+    USER dino
+    WORKDIR /home/dino
+
+    # Automatically source ROS 2 when shell starts
+    RUN echo "source /opt/ros/foxy/setup.bash" >> /home/dino/.bashrc
+    ```
+
+1. Build the Docker image
+
+    From the same folder, run:
+    ```bash
+    docker build -t ros2-foxy-dino .
+    ```
+    This will:
+    
+    - download the `ros:foxy` image,
+    - create a new user named `dino`,
+    - save this as a new image named `ros2-foxy-dino`.
+
+    It may take a few minutes to complete it for the first time.
+
+1. Run a container from this image
+
+    ```bash
+    docker run -it --name ros2_foxy_container ros2-foxy-dino
+    ```
+
 ## Create a reusable ROS2 workspace to be shared between host computer and Docker container
 
 In many cases, it's good to share a local ROS2 workspace into the container so your code and builds are persistent and you can access the ROS2 workspace from your host computer. This could be done through "bind-mounting". 
@@ -96,9 +155,15 @@ This is helpful because ❗if you created a workspace inside the container witho
     usr@host:~$ cd basic_ws
     ```
 
-1. Run the following to start a Docker container with a directory bound-mounted from the host into the container
+1. Run the following to start a Docker container with a directory bound-mounted from the host into the container 
+    
+    If you're not using an image, run
     ```bash
-    usr@host:~/basic_ws$ docker run -it -v /usr/basic_ws/:/root/basic_ws/ --name ros2_foxy_basic ros:foxy
+    usr@host:~/basic_ws$ docker run -it -v /home/usr/basic_ws/:/home/dino/basic_ws/ --name ros2_foxy_basic ros:foxy
+    ```
+    If you're using an image, run
+    ```bash
+    usr@host:~/basic_ws$ docker run -it -v /home/usr/basic_ws/:/home/dino/basic_ws --name ros2_foxy_basic ros2-foxy-dino 
     ```
     This does the following:
     - `docker run`: Starts a new Docker container.
@@ -109,25 +174,25 @@ This is helpful because ❗if you created a workspace inside the container witho
 
 1. Create the workspace in the container
     ```bash
-    root@container:~$ cd /root/basic_ws/
-    root@container:~/basic_ws$ colcon build
+    dino@container:~$ cd /dino/basic_ws/
+    dino@container:~/basic_ws$ colcon build
     ```
 
 1. Once the build is complete, you'll see somethings like the following
     ```bash
-    root@container:~/basic_ws$ ll
+    dino@container:~/basic_ws$ ll
     total 24
-    drwxrwxr-x 6 root root 4096 Jun  3 01:23 ./
-    drwx------ 1 root root 4096 Jun  3 01:22 ../
-    drwxr-xr-x 2 root root 4096 Jun  3 01:23 build/
-    drwxr-xr-x 2 root root 4096 Jun  3 01:23 install/
-    drwxr-xr-x 3 root root 4096 Jun  3 01:23 log/
-    drwxrwxr-x 2 root root 4096 Jun  3 01:20 src/
+    drwxrwxr-x 6 dino dino 4096 Jun  3 01:23 ./
+    drwx------ 1 dino dino 4096 Jun  3 01:22 ../
+    drwxr-xr-x 2 dino dino 4096 Jun  3 01:23 build/
+    drwxr-xr-x 2 dino dino 4096 Jun  3 01:23 install/
+    drwxr-xr-x 3 dino dino 4096 Jun  3 01:23 log/
+    drwxrwxr-x 2 dino dino 4096 Jun  3 01:20 src/
     ```
 
 1. Again, to use ROS2 in the container, you need to source it inside the container
     ```bash
-    root@container:~/basic_ws$ source /opt/ros/foxy/setup.bash
+    dino@container:~/basic_ws$ source /opt/ros/foxy/setup.bash
     ```
 
 ## Using `tmux` inside a Docker container
