@@ -130,7 +130,7 @@ $$
 
 $$
 \begin{aligned}
-\dot{x}_{1} &= y (x_{5})\\
+\dot{x}_{1} &= y (x_5)\\
 y &= x
 \end{aligned}
 $$
