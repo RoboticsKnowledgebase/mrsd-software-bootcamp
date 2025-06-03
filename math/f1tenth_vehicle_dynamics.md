@@ -184,10 +184,10 @@ The **parameters** are as follows:
 The **continuous-time dynamics** is follows:
 $$
 \begin{aligned}
-\dot{x}_1 &= x_4\cos\bigl(x_5+x_7\bigr) \\
-\dot{x}_2 &= x_4\sin\bigl(x_5+x_7\bigr) \\
-\dot{x}_3 &= f_s\bigl(x_3,u_1\bigr) \\
-\dot{x}_4 &= f_a\bigl(x_4,u_2\bigr) \\
+\dot{x}_1 &= x_4\cos(x_5+x_7) \\
+\dot{x}_2 &= x_4\sin(x_5+x_7) \\
+\dot{x}_3 &= f_s(x_3,u_1) \\
+\dot{x}_4 &= f_a(x_4,u_2) \\
 \dot{x}_5 &= x_6 \\
 \dot{x}_6 &= 
 \frac{\mu m}{I_z(l_r+l_f)}
