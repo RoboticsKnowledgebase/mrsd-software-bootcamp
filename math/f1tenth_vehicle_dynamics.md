@@ -130,7 +130,7 @@ $$
 
 $$
 \begin{aligned}
-\dot{x}_{1} &= y \\
+\dot{x}_{1} &= y \cost(x_{5})\\
 y &= x
 \end{aligned}
 $$
