@@ -116,7 +116,7 @@ The **control inputs** are as follows:
 - $u_{1}=v_{\delta}$:  Steering-angle rate command [rad/s] 
 - $u_{2}=a_{\text{long}}$:  Longitudinal acceleration command [$m/s^{2}$] 
 
-The **continuous-time dynamics** is follows, where $l_{wb}$ is the wheel-base.
+The **continuous-time dynamics** is follows, where $l_w:=l_{wb}$ is the wheel-base.
 
 $$
 \begin{aligned}
@@ -124,17 +124,7 @@ $$
 \dot{x}_2 &= x_4 \sin(x_5) \\
 \dot{x}_3 &= f_s(x_3,u_1) \\
 \dot{x}_4 &= f_a(x_4,u_2) \\
-\dot{x}_5 &= \frac{x_4}{l_{wb}} \tan(x_3) 
-\end{aligned}
-$$
-<!-- 
-
--->
-
-$$
-\begin{aligned}
-\dot{x}_{1} &= y \cos(x_5)\\
-y &= x
+\dot{x}_5 &= \frac{x_4}{l_w} \tan(x_3) 
 \end{aligned}
 $$
 
