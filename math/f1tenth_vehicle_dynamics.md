@@ -126,6 +126,13 @@ $$
 \dot{x}_{5} = \frac{x_{4}}{l_{wb}}\tan(x_{3})
 $$
 
+$$
+\begin{aligned}
+x &= y \\
+y &= x
+\end{aligned}
+$$
+
 - $f_{\text{steer}}$ captures steering actuator dynamics or limits.  
 - $f_{\text{acc}}$ captures drivetrain dynamics, drag, or throttle/brake limits.
 
