@@ -122,12 +122,12 @@ $$
 \begin{aligned}
 \dot{x}_1 &= x_4 \cos(x_5) \\
 \dot{x}_2 &= x_4 \sin(x_5) \\
-\dot{x}_3 &= f_\text{steer}(x_3,u_1)
+\dot{x}_3 &= f_s(x_3,u_1) \\
+\dot{x}_4 &= f_a(x_4,u_2)
 \end{aligned}
 $$
 <!-- 
-\\
-\dot{x}_4 &= f_{acc}(x_4,u_2) \\
+ \\
 \dot{x}_5 &= \frac{x_4}{l_{wb}} \tan(x_3) 
 -->
 
@@ -138,8 +138,8 @@ y &= x
 \end{aligned}
 $$
 
-- $f_{\text{steer}}$ captures steering actuator dynamics or limits.  
-- $f_{\text{acc}}$ captures drivetrain dynamics, drag, or throttle/brake limits.
+- $f_s:=f_{\text{steer}}$ captures steering actuator dynamics or limits.  
+- $f_a:=f_{\text{acc}}$ captures drivetrain dynamics, drag, or throttle/brake limits.
 
 ### Dynamic Single Track Model with Linear Tire Model
 On top of the kinematic single track model, we add a linear tire model to derive the dynamic single track model with linear tire model. Here, we can consider the important effects such as understeer or oversteer. Introduction of tire forces mean
