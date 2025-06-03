@@ -34,7 +34,7 @@ Move on to *Section 3* once you're done.
 
 ## 2.2 Getting ready **(Docker)**
 
-If you can't have Ubuntu installed natively, install Docker on your system following the instructions here: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/). The documentation of Docker can be found [here](https://docs.docker.com/reference/).
+If you can't have Ubuntu installed natively, install Docker on your system following the instructions here: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/). The documentation of Docker can be found [here](https://docs.docker.com/reference/), and the documention of ROS2 with Docker can be found [here](/ros/ros2_docker.md).
 
 Next, start a container with a bind mount to your workspace directory on your host system inside this repo by:
 

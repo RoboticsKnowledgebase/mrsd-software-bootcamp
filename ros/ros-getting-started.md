@@ -24,7 +24,8 @@ Follow the instructions on the [ROS Noetic installation page](http://wiki.ros.or
 
 ROS 2 is supported on Ubuntu Linux, OS X, Windows, and various embedded platforms.
 
-Follow the instructions on the [ROS 2 Foxy installation page](https://docs.ros.org/en/foxy/Installation.html) to install ROS 2 Foxy on Ubuntu 20.04.
+Follow the instructions on the [ROS2 Foxy installation page](https://docs.ros.org/en/foxy/Installation.html) to install ROS 2 Foxy on Ubuntu 20.04.
+> You need Ubuntu 20.04 to install ROS2 Foxy natively, i.e., without Docker. If you have Windows, macOS, or Ubuntu with a different version other than 20.04, please follows [ROS2 with Docker](/ros/ros2_docker.md).
 
 ## ROS Docker vs ROS Native: Which Installation Method Should I Use?
 

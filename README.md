@@ -58,8 +58,8 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         <ol type="a">
             <li><a href="ros/ros-101.md">Introduction</a></li>
             <li><a href="ros/ros-getting-started.md">Getting Started with ROS/ROS2 for Robotics</a></li>
+            <li><a href="ros/ros2_docker.md">ROS2 with Docker</a></li>
             <li><a href="ros/ros2_basics.md">ROS2 basics</a></li>
-            <li><a href="exercises/docker-ros-chatter.md">Exercise: ROS2 Docker</a></li>
             <li><a href="F1Tenth/README.md">Full stack development with `F1Tenth` for ROS2</a> <span style="color: red;">[Required for Bootcamp]</span></li>
             <li><a href="exercises/ros2_asgn.md">Exercise: Test your understanding for ROS2</a></li>
             <li><a href="ros/ros-action-server.md">ROS Action Server</a> <span style="color: red;">(ROS1)</span></li>
