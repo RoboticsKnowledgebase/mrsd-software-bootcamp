@@ -119,11 +119,11 @@ The **control inputs** are as follows:
 The **continuous-time dynamics** is follows, where $l_{wb}$ is the wheel-base.
 
 $$
-\dot{x}_{1} = x_{4}\,\cos(x_{5}) \\
-\dot{x}_{2} = x_{4}\,\sin(x_{5}) \\
-\dot{x}_{3} = f_{\text{steer}}\!(x_{3},\,u_{1}) \\
-\dot{x}_{4} = f_{\text{acc}}\!(x_{4},\,u_{2}) \\
-\dot{x}_{5} = \frac{x_{4}}{\,l_{wb}\,}\,\tan\!(x_{3})
+\dot{x}_{1} = x_{4}\cos(x_{5}) \\
+\dot{x}_{2} = x_{4}\sin(x_{5}) \\
+\dot{x}_{3} = f_{\text{steer}}(x_{3},u_{1}) \\
+\dot{x}_{4} = f_{\text{acc}}(x_{4},u_{2}) \\
+\dot{x}_{5} = \frac{x_{4}}{l_{wb}}\tan(x_{3})
 $$
 
 - $f_{\text{steer}}$ captures steering actuator dynamics or limits.  
