@@ -123,12 +123,12 @@ $$
 \dot{x}_1 &= x_4 \cos(x_5) \\
 \dot{x}_2 &= x_4 \sin(x_5) \\
 \dot{x}_3 &= f_s(x_3,u_1) \\
-\dot{x}_4 &= f_a(x_4,u_2)
+\dot{x}_4 &= f_a(x_4,u_2) \\
+\dot{x}_5 &= \frac{x_4}{l_{wb}} \tan(x_3) 
 \end{aligned}
 $$
 <!-- 
- \\
-\dot{x}_5 &= \frac{x_4}{l_{wb}} \tan(x_3) 
+
 -->
 
 $$
