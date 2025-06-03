@@ -121,12 +121,12 @@ The **continuous-time dynamics** is follows, where $l_{wb}$ is the wheel-base.
 $$
 \begin{aligned}
 \dot{x}_1 &= x_4 \cos(x_5) \\
-\dot{x}_2 &= x_4 \sin(x_5) 
+\dot{x}_2 &= x_4 \sin(x_5) \\
+\dot{x}_3 &= f_{steer}(x_3,u_1)
 \end{aligned}
 $$
 <!-- 
 \\
-\dot{x}_3 &= f_{steer}(x_3,u_1) \\
 \dot{x}_4 &= f_{acc}(x_4,u_2) \\
 \dot{x}_5 &= \frac{x_4}{l_{wb}} \tan(x_3) 
 -->
