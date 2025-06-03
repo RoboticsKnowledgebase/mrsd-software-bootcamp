@@ -10,7 +10,7 @@ After getting familiar with ROS2, we shall hop onto this quick exercise where yo
 - Creating launch files
 
 ## 1: Creating a Package
-**Exercise 1**: create a package named `lab1_pkg` in the workspace we created. The package needs to meet these criteria:
+**Exercise 1**: create a package named `basic_pkg` in the workspace we created. The package needs to meet these criteria:
 - The package supports both `Python` and `C++`.
 - The package needs to have the `ackermann_msgs` dependency.
 - Both of these can be done by declaring the correct dependencies in `package.xml`.

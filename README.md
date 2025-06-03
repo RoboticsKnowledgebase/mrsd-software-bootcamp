@@ -6,7 +6,9 @@ The MRSD Software Bootcamp aims to equip incoming MRSD students (and other aspir
 Much of this Bootcamp is based on [F1Tenth](https://roboracer.ai/) (now `RoboRacer`), sourced from courses taught at [UPenn](https://github.com/f1tenth) by Dr. Rahul Mangharam and [CMU](https://github.com/f1tenth-cmu) by Dr. John Dolan.
 Students will learn how to setup development environments (Git, Docker, simulation, etc.), implement various algorithms for the F1Tenth vehicle, incorporate multiple modules into a single system for the vehicle, and test their algorithms in the `F1Tenth-Gym-ROS` simulation. 
 
-This Bootcamp utilizes both Python and C++ to emphasize that the underlying programming concepts remain consistent regardless of the language used. While some sections are written in Python and others in C++, the idea is that if you're comfortable in one, you can apply the same principles in the other. Note that while the Bootcamp doesn't dive deeply into programming techniques, Section 1(D) does provide additional resources for those needing further guidance.
+This Bootcamp utilizes both Python and C++ to emphasize that the underlying programming concepts remain consistent regardless of the language used. While some sections are written in Python and others in C++, the idea is that if you're comfortable in one, you can apply the same principles in the other. 
+
+> Note that while the Bootcamp doesn't dive deeply into programming techniques, Section 1(D) does provide additional resources for those needing further guidance.
 
 Note that some parts of this Bootcamp will lead you directly to external links. 
 
@@ -20,8 +22,6 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
 
 ## Recommended Order of Topics
 
->Please note that the latter part of the Bootcamp utilizes ROS 2 for `F1Tenth`. Furthermore, ROS2 is the preferred ROS version in most of industry and research nowadays. Thus, while some part of the Bootcamp talks about ROS, <span style="color: red; font-weight: bold;">please only install ROS2, specifically ROS-Foxy, for the Bootcamp. For ROS-Foxy, you need Ubuntu 20.04, otherwise, please use Docker containers.</span> The topics in section "Basics" that contain "ROS" instead of "ROS2" are for ROS1. We are keeping those as reference for users who want to use ROS1 for their projects.
-
 1. Basics
    
    If you are new to software development, start here. It covers a lot of the necessary concepts and skills that are required for software development. 
@@ -33,8 +33,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
             <li><a href="linux/cli-tools.md">Linux CLI Tools</a></li>
             <li><a href="linux/docker.md">Docker</a></li>
             <li><a href="linux/remote-access.md">Remote Access using SSH</a></li>
-            <li><a href="documentation/markdown.md">Writing Documentation in Markdown</a></li>
-            <li><a href="exercises/job-control.md">Job Control</a></li>
+            <li><a href="linux/job-control.md">Job Control</a></li>
         </ol>
         <li>Version Control and Collaborating through GitHub</li>
         <ol type="a">
@@ -46,7 +45,8 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         <li>Basic Programming</li>
         <ol type="a">
             <li><a href="https://roboticsknowledgebase.com/wiki/robotics-project-guide/choose-a-language/">Choosing a Programming Language for Robotics</a></li>
-            <li><a href="documentation/programming_basics.md">Online resources</a></li>
+            <li><a href="basic_programming/programming_basics.md">Online resources</a></li>
+            <li><a href="basic_programming/markdown.md">Writing Documentation in Markdown</a></li>
         </ol>
         <li>Code Editors and Custom Workspace for Programming</li>
         <ol type="a">
@@ -55,6 +55,9 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
             <li><a href="https://code.visualstudio.com/docs/editor/debugging">How to debug in VS Code</a></li>
         </ol>
         <li>ROS/ROS2 Basics</li>
+        <blockquote>
+        Please note that the latter part of the Bootcamp utilizes ROS 2 for `F1Tenth`. Furthermore, ROS2 is the preferred ROS version in most of industry and research nowadays. Thus, while some part of the Bootcamp talks about ROS, <span style="color: red; font-weight: bold;">please only install ROS2, specifically ROS-Foxy, for the Bootcamp. For ROS-Foxy, you need Ubuntu 20.04, otherwise, please use Docker containers.</span> The topics in section "Basics" that contain "ROS" instead of "ROS2" are for ROS1. We are keeping those as reference for users who want to use ROS1 for their projects.
+        </blockquote>
         <ol type="a">
             <li><a href="ros/ros-101.md">Introduction</a></li>
             <li><a href="ros/ros-getting-started.md">Getting Started with ROS/ROS2 for Robotics</a></li>
@@ -69,8 +72,9 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
     </ol>
 
 2. Practical Math Tools in Python for Robotics & System Dynamics
-
+    <blockquote>
     You’ll need a working knowledge of key mathematical tools to implement and debug the algorithms that make robots move, perceive, and plan. The goal of Section 2(A) is not to teach an entire math curriculum, but to equip you with just enough theory — and the right Python libraries — to tackle the coding exercises with confidence. In Section 2(B), we will get into the details of F1Tenth vehicle states & dynamics so that you can implement the algorithms in Section 4. 
+    </blockquote>
     <ol type="A">
         <li>Math tools you’ll lean on every day</li>
         <ol type="a">

@@ -58,9 +58,33 @@ For example, the steps are as follows if you are using Ubuntu 22.04:
     docker start -ai ros2_foxy_container
     ```
 
+1. (Optional) To delete the container
+
+    First, exit the container:
+    ```bash
+    exit
+    ```
+    Then, on your host system, remove it using:
+    ```bash
+    docker rm ros2_foxy_container
+    ```
+
+1. (Optional) To list Docker containers
+
+    If you want to list only the containers that are running
+    ```bash
+    docker ps
+    ```
+    If you want to list all containers (running + stopped)
+    ```bash
+    docker ps -a
+    ```
+
 ## Create a reusable ROS2 workspace to be shared between host computer and Docker container
 
-In many cases, it's good to share a local ROS2 workspace into the container so your code and builds are persistent and you can access the ROS2 workspace from your host computer. 
+In many cases, it's good to share a local ROS2 workspace into the container so your code and builds are persistent and you can access the ROS2 workspace from your host computer. This could be done through "bind-mounting". 
+
+This is helpful because <span style="color: red;">if you created a workspace inside the container without a bind-mount, and then delete the container, the workspace will be permanently lost</span>.
 
 1. Create a workspace folder in your host computer
     ```bash
@@ -76,16 +100,22 @@ In many cases, it's good to share a local ROS2 workspace into the container so y
     ```bash
     usr@host:~/basic_ws$ docker run -it -v /usr/basic_ws/:/root/basic_ws/ --name ros2_foxy_basic ros:foxy
     ```
+    This does the following:
+    - `docker run`: Starts a new Docker container.
+    - `-it`: Interactive terminal session (`-i` = interactive, `-t` = allocate a pseudo-TTY).
+    - `-v <host_path>:<container_path>`: Bind-mounts a directory from the host into the container. This allows you to share files between your host and container. <span style="color: red;">Note that only the files inside the directory will be shared between your host and container. Everything else lives inside the container</span>.
+    - `--name <container_name>`: Assigns the container a name.
+    - `ros:foxy`: Uses the official ROS 2 Foxy Docker image (based on Ubuntu 20.04).
 
 1. Create the workspace in the container
     ```bash
-    root@container:~# cd /root/basic_ws/
-    root@container:~/basic_ws# colcon build
+    root@container:~$ cd /root/basic_ws/
+    root@container:~/basic_ws$ colcon build
     ```
 
-1. Once the build is complete, you'll see the following
+1. Once the build is complete, you'll see somethings like the following
     ```bash
-    root@container:~/basic_ws# ll
+    root@container:~/basic_ws$ ll
     total 24
     drwxrwxr-x 6 root root 4096 Jun  3 01:23 ./
     drwx------ 1 root root 4096 Jun  3 01:22 ../
@@ -95,6 +125,19 @@ In many cases, it's good to share a local ROS2 workspace into the container so y
     drwxrwxr-x 2 root root 4096 Jun  3 01:20 src/
     ```
 
+1. Again, to use ROS2 in the container, you need to source it inside the container
+    ```bash
+    root@container:~/basic_ws$ source /opt/ros/foxy/setup.bash
+    ```
+
+## Using `tmux` inside a Docker container
+`tmux` is recommended when you're working inside a container. It could be installed in the container via: 
+```bash
+apt update && apt install tmux
+```
+`tmux` allows you to have multiple `bash` session in the same terminal window. This will be very convenient working inside containers. A quick reference on how to use tmux can be found [here](https://www.redhat.com/sysadmin/introduction-tmux-linux). You can start a session with `tmux`. Then you can call different `tmux` commands by pressing `ctrl+B` first and then the corresponding key. For example, to add a new window, press `ctrl+B` first and release and press `c` to create a new window. You can also move around with `ctrl+B` then `n` or `p`. 
+
+A cheatsheet for the original tmux shortcut keys can be found [here](https://tmuxcheatsheet.com/). To know about how to change the configuration of tmux to make it more useable (for example, if you want to toggle the mouse mode on when you start a tmux bash session or change the shortcut keys), you can find a tutorial [here](https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/).
 
 ## References
 
