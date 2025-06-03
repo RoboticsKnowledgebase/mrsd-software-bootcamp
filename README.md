@@ -56,7 +56,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         </ol>
         <li>ROS/ROS2 Basics</li>
         <blockquote>
-        Please note that the latter part of the Bootcamp utilizes ROS 2 for `F1Tenth`. Furthermore, ROS2 is the preferred ROS version in most of industry and research nowadays. Thus, while some part of the Bootcamp talks about ROS, <span style="color: red; font-weight: bold;">please only install ROS2, specifically ROS-Foxy, for the Bootcamp. For ROS-Foxy, you need Ubuntu 20.04, otherwise, please use Docker containers.</span> The topics in section "Basics" that contain "ROS" instead of "ROS2" are for ROS1. We are keeping those as reference for users who want to use ROS1 for their projects.
+        Please note that the latter part of the Bootcamp utilizes ROS 2 for `F1Tenth`. Furthermore, ROS2 is the preferred ROS version in most of industry and research nowadays. Thus, while some part of the Bootcamp talks about ROS, ❗<span style="color: red; font-weight: bold;">please only install ROS2, specifically ROS-Foxy, for the Bootcamp. For ROS-Foxy, you need Ubuntu 20.04, otherwise, please use Docker containers</span>❗ The topics in section "Basics" that contain "ROS" instead of "ROS2" are for ROS1. We are keeping those as reference for users who want to use ROS1 for their projects.
         </blockquote>
         <ol type="a">
             <li><a href="ros/ros-101.md">Introduction</a></li>

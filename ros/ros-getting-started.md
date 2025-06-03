@@ -10,11 +10,9 @@ ROS 2 is the recommended version of ROS for new projects, while ROS 1 is still w
 
 ROS 2 is designed to be more flexible, scalable and secure than ROS 1. It is also designed to be more portable across different hardware platforms and operating systems. Since ROS 1 was designed as a tool for academic and research purposes, it was not designed for secure, safety-critical or real-time systems. ROS 2 is designed to be more suitable for these types of applications.
 
-<!-- <p style="color: red; font-weight: bold;">Please install only ROS 2 for the Bootcamp.</p> -->
-
 ### 1. ROS 1 Installation
 
-<p style="color: red; font-weight: bold;">Please install only ROS 2 for the Bootcamp.</p>
+❗Please install only ROS 2 for the Bootcamp❗
 
 ROS 1 is supported on Ubuntu Linux, OS X, and Windows.
 

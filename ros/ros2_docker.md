@@ -1,7 +1,7 @@
 # ROS2 with Docker
 
 ## Installing ROS-Foxy on Docker
-Say that you are using Windows or macOS, which do not support ROS/ROS2. Or, say that you want to work with `F1Tenth-Gym-ROS`, which uses ROS-Foxy (<span style="color: red;">and we definitely do in this Bootcamp!</span>). In this case, you would need Ubuntu 20.04 to run ROS-Foxy natively. Otherwise, you would need to use Docker.
+Say that you are using Windows or macOS, which do not support ROS/ROS2. Or, say that you want to work with `F1Tenth-Gym-ROS`, which uses ROS-Foxy (❗and we definitely do in this Bootcamp❗). In this case, you would need Ubuntu 20.04 to run ROS-Foxy natively. Otherwise, you would need to use Docker.
 
 For example, the steps are as follows if you are using Ubuntu 22.04:
 
@@ -84,7 +84,7 @@ For example, the steps are as follows if you are using Ubuntu 22.04:
 
 In many cases, it's good to share a local ROS2 workspace into the container so your code and builds are persistent and you can access the ROS2 workspace from your host computer. This could be done through "bind-mounting". 
 
-This is helpful because <span style="color: red;">if you created a workspace inside the container without a bind-mount, and then delete the container, the workspace will be permanently lost</span>.
+This is helpful because ❗if you created a workspace inside the container without a bind-mount, and then delete the container, the workspace will be permanently lost❗
 
 1. Create a workspace folder in your host computer
     ```bash
@@ -103,7 +103,7 @@ This is helpful because <span style="color: red;">if you created a workspace ins
     This does the following:
     - `docker run`: Starts a new Docker container.
     - `-it`: Interactive terminal session (`-i` = interactive, `-t` = allocate a pseudo-TTY).
-    - `-v <host_path>:<container_path>`: Bind-mounts a directory from the host into the container. This allows you to share files between your host and container. <span style="color: red;">Note that only the files inside the directory will be shared between your host and container. Everything else lives inside the container</span>.
+    - `-v <host_path>:<container_path>`: Bind-mounts a directory from the host into the container. This allows you to share files between your host and container. ❗Note that only the files inside the directory will be shared between your host and container. Everything else lives inside the container❗
     - `--name <container_name>`: Assigns the container a name.
     - `ros:foxy`: Uses the official ROS 2 Foxy Docker image (based on Ubuntu 20.04).
 

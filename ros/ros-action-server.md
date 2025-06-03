@@ -1,6 +1,6 @@
 # ROS Action Server
 
-<p style="color: red; font-weight: bold;">This is for ROS 1, not ROS 2. We are keeping this for reference to users who want to use ROS 1.</p>
+❗This is for ROS 1, not ROS 2. We are keeping this for reference to users who want to use ROS 1❗
 
 ## What is an Action Server?
 
