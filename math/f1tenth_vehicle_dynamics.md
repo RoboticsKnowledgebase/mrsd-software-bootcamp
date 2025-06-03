@@ -189,8 +189,7 @@ $$
 \dot{x}_3 &= f_s(x_3,u_1) \\
 \dot{x}_4 &= f_a(x_4,u_2) \\
 \dot{x}_5 &= x_6 \\
-\dot{x}_6 &= 
-\frac{\mu m}{I_z(l_r+l_f)}
+\dot{x}_6 &= \frac{\mu m}{I_z(l_r+l_f)}
 \end{aligned}
 $$
 <!-- 
