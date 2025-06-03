@@ -182,20 +182,22 @@ The **parameters** are as follows:
 - $g$: gravity 
 
 The **continuous-time dynamics** is follows:
+
+![](fig/f1tenth_dynamics.png)
+
+<details>
+<summary>Latex code</summary>
 $$
 \begin{aligned}
-\dot{x}_1 &= x_4\cos(x_5+x_7) \\
-\dot{x}_2 &= x_4\sin(x_5+x_7) \\
-\dot{x}_3 &= f_s(x_3,u_1) \\
-\dot{x}_4 &= f_a(x_4,u_2) \\
-\dot{x}_5 &= x_6 \\
-\dot{x}_6 &= \frac{\mu m}{I_z(l_r+l_f)}
-\end{aligned}
-$$
-<!-- 
-
+\dot{x}_{1} &= x_{4}\,\cos\!\bigl(x_{5}+x_{7}\bigr) \\
+\dot{x}_{2} &= x_{4}\,\sin\!\bigl(x_{5}+x_{7}\bigr) \\
+\dot{x}_{3} &= f_{\text{steer}}\!\bigl(x_{3},\,u_{1}\bigr) \\
+\dot{x}_{4} &= f_{\text{acc}}\!\bigl(x_{4},\,u_{2}\bigr) \\
+\dot{x}_{5} &= x_{6} \\
+\dot{x}_{6} &= 
+\frac{\mu\,m}{I_{z}\,(l_{r}+l_{f})}\!
 \Bigl[
-      l_fC_{S,f}\!\bigl(g\,l_{r}-u_{2}h_{cg}\bigr)\,x_{3}
+      l_{f}C_{S,f}\!\bigl(g\,l_{r}-u_{2}h_{cg}\bigr)\,x_{3}
     + \bigl(l_{r}C_{S,r}\!\bigl(g\,l_{f}+u_{2}h_{cg}\bigr)
     - l_{f}C_{S,f}\!\bigl(g\,l_{r}-u_{2}h_{cg}\bigr)\bigr)x_{7} \\
 &\hspace{5.45cm}
@@ -213,9 +215,14 @@ $$
     + \bigl(C_{S,r}\!\bigl(g\,l_{f}+u_{2}h_{cg}\bigr)l_{r}
       - C_{S,f}\!\bigl(g\,l_{r}-u_{2}h_{cg}\bigr)l_{f}\bigr)
       \frac{x_{6}}{x_{4}}
-\Bigr] \;-\; x_{6} -->
+\Bigr] \;-\; x_{6}
+\end{aligned}
+$$
+</details>
 
-- $f_s:=f_{\text{steer}}$ models steering-actuator limits/dynamics (e.g., first-order servo).  
-- $f_a:=f_{\text{acc}}$ models drivetrain and drag effects (e.g., engine lag, braking saturation).  
+
+
+- $f_{\text{steer}}$ models steering-actuator limits/dynamics (e.g., first-order servo).  
+- $f_{\text{acc}}$ models drivetrain and drag effects (e.g., engine lag, braking saturation).  
 
 This set of seven first-order ODEs captures both longitudinal and planar dynamics, including yaw coupling and side-slip, yet retains computational efficiency by using **linear tire forces**.
