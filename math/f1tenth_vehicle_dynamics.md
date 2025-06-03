@@ -130,7 +130,7 @@ $$
 
 $$
 \begin{aligned}
-\dot{x} &= y \\
+\dot{x}_{1} &= y \\
 y &= x
 \end{aligned}
 $$
