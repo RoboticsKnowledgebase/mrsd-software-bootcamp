@@ -130,7 +130,7 @@ $$
 
 $$
 \begin{aligned}
-x &= y \\
+\dot{x} &= y \\
 y &= x
 \end{aligned}
 $$
