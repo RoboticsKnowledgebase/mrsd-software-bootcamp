@@ -130,7 +130,7 @@ $$
 
 $$
 \begin{aligned}
-\dot{x}_{1} &= y \cos(x_5)\\
+\dot{x}_{1} &= y \cos(x_{5})\\
 y &= x
 \end{aligned}
 $$
