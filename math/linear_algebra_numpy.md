@@ -144,13 +144,13 @@ t2 = np.array([0, 2])
 T2 = np.block([[R2, t2[:, None]],
                [0, 0, 1]])
 
-T_world_to_obj = T2 @ T1         # ⬅️ composition
+T_world_to_obj = T2 @ T1         # <-- composition
 print(T_world_to_obj)
 ```
 
 > **What to do:**  
 > 1. Verify the rotation part is still 90 °.  
-> 2. Explain why the final translation is `[ -2, 1 ]ᵀ` (draw the frames).  
+> 2. Explain why the final translation is `[ 1, 2 ]ᵀ`.  
 
 ---
 
@@ -274,6 +274,7 @@ for i in range(N):
         for k in range(N):
             s += A[i, k] * B[k, j]
         C_py[i, j] = s
+        
 t1 = time.perf_counter()
 print(f"Python {t1-t0:.3f} s")
 ```

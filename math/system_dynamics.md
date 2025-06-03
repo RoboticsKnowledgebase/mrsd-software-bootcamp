@@ -224,7 +224,7 @@ B_jac = f.jacobian([tau])                # ∂f/∂u
 print(sp.simplify(A_jac))
 ```  
 
-### Exercise!
+### Exercise
 Now you have both analytical and non-linear models ready for simulation, control design, or further analysis. 
 
-**Try to plot out how the states change over time!!!**
+**Try to plot out how the states change over time using `matplotlib`.**

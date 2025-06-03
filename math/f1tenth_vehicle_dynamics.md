@@ -120,10 +120,10 @@ The **continuous-time dynamics** is follows, where $l_{wb}$ is the wheel-base.
 
 $$
 \begin{aligned}
-\dot{x}_{1} &= x_{4}\,\cos(x_{5}) \\[2pt]
-\dot{x}_{2} &= x_{4}\,\sin(x_{5}) \\[2pt]
-\dot{x}_{3} &= f_{\text{steer}}\!\bigl(x_{3},\,u_{1}\bigr) \\[2pt]
-\dot{x}_{4} &= f_{\text{acc}}\!\bigl(x_{4},\,u_{2}\bigr) \\[2pt]
+\dot{x}_{1} &= x_{4}\,\cos(x_{5}) \\
+\dot{x}_{2} &= x_{4}\,\sin(x_{5}) \\
+\dot{x}_{3} &= f_{\text{steer}}\!\bigl(x_{3},\,u_{1}\bigr) \\
+\dot{x}_{4} &= f_{\text{acc}}\!\bigl(x_{4},\,u_{2}\bigr) \\
 \dot{x}_{5} &= \frac{x_{4}}{\,l_{wb}\,}\,\tan\!\bigl(x_{3}\bigr)
 \end{aligned}
 $$
@@ -184,11 +184,11 @@ The **parameters** are as follows:
 The **continuous-time dynamics** is follows:
 $$
 \begin{aligned}
-\dot{x}_{1} &= x_{4}\,\cos\!\bigl(x_{5}+x_{7}\bigr) \\[3pt]
-\dot{x}_{2} &= x_{4}\,\sin\!\bigl(x_{5}+x_{7}\bigr) \\[6pt]
-\dot{x}_{3} &= f_{\text{steer}}\!\bigl(x_{3},\,u_{1}\bigr) \\[3pt]
-\dot{x}_{4} &= f_{\text{acc}}\!\bigl(x_{4},\,u_{2}\bigr) \\[6pt]
-\dot{x}_{5} &= x_{6} \\[9pt]
+\dot{x}_{1} &= x_{4}\,\cos\!\bigl(x_{5}+x_{7}\bigr) \\
+\dot{x}_{2} &= x_{4}\,\sin\!\bigl(x_{5}+x_{7}\bigr) \\
+\dot{x}_{3} &= f_{\text{steer}}\!\bigl(x_{3},\,u_{1}\bigr) \\
+\dot{x}_{4} &= f_{\text{acc}}\!\bigl(x_{4},\,u_{2}\bigr) \\
+\dot{x}_{5} &= x_{6} \\
 \dot{x}_{6} &= 
 \frac{\mu\,m}{I_{z}\,(l_{r}+l_{f})}\!
 \Bigl[
@@ -199,7 +199,7 @@ $$
     -\bigl(l_{f}^{2}C_{S,f}\!\bigl(g\,l_{r}-u_{2}h_{cg}\bigr)
     + l_{r}^{2}C_{S,r}\!\bigl(g\,l_{f}+u_{2}h_{cg}\bigr)\bigr)
       \frac{x_{6}}{x_{4}}
-\Bigr] \\[12pt]
+\Bigr] \\
 \dot{x}_{7} &= 
 \frac{\mu}{x_{4}\,(l_{r}+l_{f})}\!
 \Bigl[
