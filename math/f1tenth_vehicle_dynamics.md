@@ -122,7 +122,7 @@ $$
 \begin{aligned}
 \dot{x}_1 &= x_4 \cos(x_5) \\
 \dot{x}_2 &= x_4 \sin(x_5) \\
-\dot{x}_3 &= f(x_3,u_1)
+\dot{x}_3 &= f_{\text{steer}}(x_3,u_1)
 \end{aligned}
 $$
 <!-- 
