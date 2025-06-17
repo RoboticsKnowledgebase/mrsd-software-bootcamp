@@ -2,6 +2,8 @@
 
 > This exercise is based on [CMU 16663 - F1Tenth Course :: Lab 3](https://github.com/f1tenth-cmu/f1tenth_lab3).
 
+> Skeleton code is provided in the [`wall_following_pkg`](/simulation/wall_following_pkg/). Use this package within your ROS2 workspace.
+
 ## I. Learning Goals
 
 - PID Controllers

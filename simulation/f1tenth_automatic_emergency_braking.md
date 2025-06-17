@@ -2,6 +2,8 @@
 
 > This exercise is based on [CMU 16663 - F1Tenth Course :: Lab 2](https://github.com/f1tenth-cmu/f1tenth_lab2).
 
+> Skeleton code is provided in the [`emergency_braking_pkg`](/simulation/emergency_braking_pkg/). Use this package within your ROS2 workspace.
+
 ## I. Learning Goals
 
 - Using the `LaserScan` message in ROS 2

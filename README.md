@@ -123,18 +123,18 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
 
 4. Algorithms
    <ol type="A">
-        <li>Mapping algorithms
-            <ol type="a">
-                <li>SLAM (still in development)</li>
-            </ol>
-        </li>
         <li>Localization algorithms
             <ol type="a">
                 <li>Particle Filter: AMCL (still in development)</li>
                 <li>EKF (Extended Kalman Filter) (still in development)</li>
             </ol>
         </li>
-        <li>Path planning algorithms
+        <li>Mapping algorithms
+            <ol type="a">
+                <li>SLAM (still in development)</li>
+            </ol>
+        </li>
+        <li>Motion planning algorithms
             <ol type="a">
                 <li>RRT (Rapidly Exploding Tree) (still in development)</li>
                 <li>RRT* (still in development)</li>
