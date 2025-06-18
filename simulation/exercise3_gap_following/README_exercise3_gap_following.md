@@ -2,7 +2,7 @@
 
 > This exercise is based on [CMU 16663 - F1Tenth Course :: Lab 4](https://github.com/f1tenth-cmu/f1tenth_lab4).
 
-> Skeleton code is provided in the [`gap_following_pkg`](/simulation/gap_following_pkg/). Use this package within your ROS2 workspace.
+> Skeleton code is provided in the [`gap_following_pkg`](/simulation/exercise3_gap_following/gap_following_pkg/). Use this package within your ROS2 workspace.
 
 ## I. Learning Goals
 

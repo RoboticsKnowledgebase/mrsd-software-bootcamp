@@ -88,31 +88,15 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         </ol>
     </ol>
 
-<!-- 3. Robotics Basics
-    <ol type="A">
-        <li>Sensing (Perception)</li>
-        <ol type="a">
-            <li><a href="https://roboticsknowledgebase.com/wiki/sensing/">RoboticsKnowledgebase - Sensing</a></li>
-            <li></li>
-        </ol>
-        <li>Actuation (Motion and Control)</li>
-        <ol type="a">
-            <li></li>
-            <li></li>
-        </ol>
-   </ol> -->
-
-<!-- <li><a href="F1Tenth/README.md">Full stack development with `F1Tenth` for ROS2</a> <span style="color: red;">[Required for Bootcamp]</span></li>    -->
-
-3. Robotics Basics with <code>F1Tenth-Gym-ROS</code>
+3. Simulation Basics with <code>F1Tenth-Gym-ROS</code>
     <ol type="A">
         <li><a href="https://roboticsknowledgebase.com/wiki/robotics-project-guide/choose-a-sim/">Simulation Basics</a></li>
         <li><code>F1Tenth-Gym-ROS</code></li>
         <ol type="a">
             <li><a href="https://github.com/f1tenth/f1tenth_gym_ros">Setting up the <code>F1Tenth-Gym-ROS</code> environment with ROS2</a></li>
-            <li><a href="simulation/f1tenth_automatic_emergency_braking.md"><code>F1Tenth-Gym-ROS</code> exercise 1: Automatic Emergency Braking</a></li>
-            <li><a href="simulation/f1tenth_wall_following.md"><code>F1Tenth-Gym-ROS</code> exercise 2: Wall Following</a></li>
-            <li><a href="simulation/f1tenth_gap_following.md"><code>F1Tenth-Gym-ROS</code> exercise 3: Gap Following</a></li>
+            <li><a href="simulation/exercise1_emergency_braking/README_exercise1_automatic_emergency_braking.md"><code>F1Tenth-Gym-ROS</code> exercise 1: Automatic Emergency Braking</a></li>
+            <li><a href="simulation/exercise2_wall_following/README_exercise2_wall_following.md"><code>F1Tenth-Gym-ROS</code> exercise 2: Wall Following</a></li>
+            <li><a href="simulation/exercise3_gap_following/README_exercise3_gap_following.md"><code>F1Tenth-Gym-ROS</code> exercise 3: Gap Following</a></li>
         </ol>
         <li>Custom robot and simulation development in Gazebo</li>
         <ol type="a">
@@ -122,28 +106,32 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
     </ol>
 
 4. Algorithms
+    <blockquote>
+    You can use either Python or C++ for these exercises. 
+    </blockquote>
+
    <ol type="A">
-        <li>Localization algorithms
-            <ol type="a">
-                <li>Particle Filter: AMCL (still in development)</li>
-                <li>EKF (Extended Kalman Filter) (still in development)</li>
-            </ol>
-        </li>
         <li>Mapping algorithms
             <ol type="a">
-                <li>SLAM (still in development)</li>
+                <li><a href="algorithms/mapping/README_f1tenth_slam.md">SLAM</a></li>
             </ol>
         </li>
-        <li>Motion planning algorithms
+        <li>Localization algorithms
             <ol type="a">
-                <li>RRT (Rapidly Exploding Tree) (still in development)</li>
-                <li>RRT* (still in development)</li>
+                <li><a href="algorithms/localization/README_f1tenth_amcl.md">Particle Filter: AMCL</a></li>
+                <li>EKF (Extended Kalman Filter) (still in development)</li>
             </ol>
         </li>
         <li>Control algorithms
             <ol type="a">
                 <li>Pure Pursuit (still in development)</li>
                 <li>MPC (Model Predictive Control) (still in development)</li>
+            </ol>
+        </li>
+        <li>Motion planning algorithms
+            <ol type="a">
+                <li><a href="algorithms/motion_planning/README_f1tenth_rrt.md">RRT (Rapidly Exploding Tree)</a></li>
+                <li><a href="algorithms/motion_planning/README_f1tenth_rrtStar.md">RRT*</a></li>
             </ol>
         </li>
         <li>Reinforcement Learning
