@@ -107,7 +107,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
 
 4. Algorithms
     <blockquote>
-    You can use either Python or C++ for these exercises. Python skeleton code is provided in <code>/scripts</code> directory and C++ is provided in <code>/src</code> directory, in each algorithm package.
+    <b>Sections i, ii, iii, and iv are for F1Tenth</b>. You can use either Python or C++ for these exercises. Python skeleton code is provided in <code>/scripts</code> directory and C++ is provided in <code>/src</code> directory, in each algorithm package.
     </blockquote>
 
    <ol type="A">
