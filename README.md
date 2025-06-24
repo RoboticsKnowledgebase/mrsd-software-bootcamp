@@ -107,7 +107,7 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
 
 4. Algorithms
     <blockquote>
-    You can use either Python or C++ for these exercises. 
+    You can use either Python or C++ for these exercises. Python skeleton code is provided in <code>/scripts</code> directory and C++ is provided in <code>/src</code> directory, in each algorithm package.
     </blockquote>
 
    <ol type="A">
@@ -119,13 +119,13 @@ Moreover, users are recommended to go over the [RoboticsKnowledgebase](https://r
         <li>Localization algorithms
             <ol type="a">
                 <li><a href="algorithms/localization/README_f1tenth_amcl.md">Particle Filter: AMCL</a></li>
-                <li>EKF (Extended Kalman Filter) (still in development)</li>
+                <!-- <li>EKF (Extended Kalman Filter) (still in development)</li> -->
             </ol>
         </li>
         <li>Control algorithms
             <ol type="a">
-                <li>Pure Pursuit (still in development)</li>
-                <li>MPC (Model Predictive Control) (still in development)</li>
+                <li><a href="algorithms/control/README_f1tenth_pure_pursuit.md">Pure Pursuit</a></li>
+                <li><a href="algorithms/control/README_f1tenth_mpc.md">MPC (Model Predictive Control)</a></li>
             </ol>
         </li>
         <li>Motion planning algorithms
