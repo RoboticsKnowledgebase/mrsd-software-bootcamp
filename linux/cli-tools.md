@@ -603,15 +603,15 @@ curl http://example.com/foo -o foo
 
 # Connect to the remote server "foo.com" as the user "bar"
 
-ssh
+ssh bar@foo.com
 
 # Connect to the remote server "foo.com" as the user "bar" and execute the command "baz"
 
-ssh
+ssh bar@foo.com "baz"
 
 # Connect to the remote server "foo.com" as the user "bar" and execute the command "baz" in the background
 
-ssh
+ssh -f bar@foo.com "baz"
 ```
 
 ### `scp`
